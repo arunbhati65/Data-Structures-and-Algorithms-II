@@ -1,9 +1,25 @@
 public class ReverseList{
 	static void printAll(Node head){
-		while(head.next!=null){
-			System.out.println(head.data);
+		while(head!=null){
+			System.out.print(head.data+"->");
 			head=head.next;
 		}
+		System.out.print("\n");
+	}
+	//prev  current
+	//null   //1       2 3 4 5 6
+	static Node reverseList(Node head){
+		Node current=head;
+		Node prev=null;
+		Node temp;
+		while(current!=null){
+			temp=current.next;
+			current.next=prev;
+			prev=current;
+			current=temp;
+		}
+		head=prev;
+		return head;
 	}	
 
 	public static void main(String args[]){
@@ -14,8 +30,9 @@ public class ReverseList{
 		head.next.next.next.next=new Node(5);
 		head.next.next.next.next.next=new Node(6);
 		head.next.next.next.next.next.next=new Node(7);
-
-		printAll(head);	
+		
+		printAll(head);		
+		printAll(reverseList(head));	
 	}
 }
 
