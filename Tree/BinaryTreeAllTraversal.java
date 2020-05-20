@@ -1,4 +1,5 @@
-
+import java.util.Queue;
+import java.util.LinkedList;
 //		1
 //	      2	  3
 //         4  5   6  7
@@ -23,6 +24,23 @@ public class BinaryTreeAllTraversal{
 		inOrderTraversal(root.right);
 		System.out.print(root.data+"--");
 	}
+
+	static void levelOrderTraversal(BTNode root){
+		Queue<BTNode> queue=new LinkedList<BTNode>();
+		queue.offer(root);
+		BTNode currentNode=null;
+		while(!queue.isEmpty()){
+			currentNode=queue.poll();
+			System.out.print(currentNode.data+"--");
+			if(currentNode.left!=null){
+				queue.offer(currentNode.left);
+			}
+			if(currentNode.right!=null){
+				queue.offer(currentNode.right);
+			}
+		}
+	}
+
 	public static void main(String args[]){
 		BTNode root=new BTNode(1);
 		root.left=new BTNode(2);
@@ -36,6 +54,7 @@ public class BinaryTreeAllTraversal{
 		System.out.print("Inorder Traversal :-");inOrderTraversal(root);
 		System.out.print("\nPreorder Traversal :-");preOrderTraversal(root);
 		System.out.print("\nPostOrder Traversal :-");postOrderTraversal(root);
+		System.out.print("\nlevelOrder Traversal :-");levelOrderTraversal(root);
 	}
 }
 
