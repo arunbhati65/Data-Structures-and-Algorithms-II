@@ -54,25 +54,7 @@ public class BinaryTreeAllTraversal{
 		System.out.print("Inorder Traversal :-");inOrderTraversal(root);
 		System.out.print("\nPreorder Traversal :-");preOrderTraversal(root);
 		System.out.print("\nPostOrder Traversal :-");postOrderTraversal(root);
+		//BFS traversals
 		System.out.print("\nlevelOrder Traversal :-");levelOrderTraversal(root);
-	}
-}
-
-class BTNode{
-	public int data;
-	public BTNode left;
-	public BTNode right;
-
-	public BTNode(){
-	}
-
-	public BTNode(int data,	BTNode left,BTNode right){
-		this.data=data;
-		this.left=left;
-		this.right=right;
-	}
-
-	public BTNode(int data){
-		this.data=data;
 	}
 }
