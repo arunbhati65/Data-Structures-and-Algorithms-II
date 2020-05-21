@@ -24,6 +24,13 @@ public class GraphUsingList{
 		}
 	}
 
+	public static void addDirectedEdge(int i,int j){
+		if(i>=0 && j>=0 && j<v && i<v){
+			if(!matrix.get(i).contains(j)){
+				matrix.get(i).add(j);
+			}			
+		}
+	}
 	public static void deleteEdge(int i,int j){
 		if(i>=0 && j>=0 && j<v && i<v){
 			for(int first=0;first<matrix.get(i).size();++first){
