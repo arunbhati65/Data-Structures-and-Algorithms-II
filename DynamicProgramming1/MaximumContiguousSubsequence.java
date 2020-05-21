@@ -14,7 +14,7 @@ public class MaximumContiguousSubsequence{
 		return maxSum;
 	}
 
-	static int MCSLinear(int arr[]){ //o(n2)
+	static int MCSLinear(int arr[]){ //o(n)
 		
 		int [] A=new int[arr.length];
 		A[0]=arr[0];
