@@ -16,6 +16,8 @@ public class GraphUsingList{
 		if(i>=0 && j>=0 && j<v && i<v){
 			if(!matrix.get(i).contains(j)){
 				matrix.get(i).add(j);
+			}
+			if(!matrix.get(j).contains(i)){
 				matrix.get(j).add(i);
 			}
 			
