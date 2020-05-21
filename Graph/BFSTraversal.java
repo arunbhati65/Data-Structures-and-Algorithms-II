@@ -10,11 +10,11 @@ import java.util.ArrayList;
 //BFS print level by level
 public class BFSTraversal{
 	
-	static void doBFSTraverse(ArrayList<ArrayList<Integer>> matrix,int v,Boolean [] visited){
+	static void doBFSTraverse(ArrayList<ArrayList<Integer>> matrix,int v,int source,Boolean [] visited){
 		System.out.print("BFS traverse");
 		Queue<Integer> q=new LinkedList<Integer>();
-		q.add(matrix.get(0).get(0));
-		visited[matrix.get(0).get(0)]=true;
+		q.add(source);
+		visited[source]=true;
 		while(!q.isEmpty()){
 			int u=q.poll();
 			System.out.print(u+"-");
@@ -30,9 +30,9 @@ public class BFSTraversal{
 
 	static void BFSHandleDisconnectedCases(ArrayList<ArrayList<Integer>> matrix,int v){
 		Boolean [] visited=new Boolean[v];
-		for(int i=0;i<v;++i){
-			if(visited[i]==null || visited[i]==false){
-			doBFSTraverse(matrix,v,visited);
+		for(int source=0;source<v;++source){
+			if(visited[source]==null || visited[source]==false){
+			doBFSTraverse(matrix,v,source,visited);
 			}
 		}
 	}
