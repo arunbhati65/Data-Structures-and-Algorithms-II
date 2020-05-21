@@ -24,7 +24,7 @@ public class TopologicalSort{
 
 		while(!q.isEmpty()){
 			int u=q.poll();
-			System.out.print(u+"->");
+			System.out.print(u+"-> ");
 			for(int i=0;i<matrix.get(u).size();++i){
 				indegree[matrix.get(u).get(i)]--;
 				if(indegree[matrix.get(u).get(i)]==0){
