@@ -1,4 +1,6 @@
-public class QuickSortPartition{//o(nlogn)
+public class QuickSortPartition{//o(nlogn) // do not use extra memory space other than recursion stack merge sort use memory space for left and right array while merging
+					   //in merge sort left and right array are sorted while merging so need to pick one by one from each array for merging
+					   // both follow divide nd concur		
     static void doQuickSort(int [] arr,int l,int h){
         int p;
         if(l<h){
