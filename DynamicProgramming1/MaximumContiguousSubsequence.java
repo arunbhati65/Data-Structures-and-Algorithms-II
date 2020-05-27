@@ -1,7 +1,21 @@
 import java.lang.Math;
 
-public class MaximumContiguousSubsequence{
-	
+public class MaximumContiguousSubsequence{ // 
+
+   	int max=Integer.MIN_VALUE;
+  	public int maxSubArray(int[] nums) {
+        	 helper(nums, nums.length-1);
+        	 return max;
+  	}
+
+    	int helper(int[] nums,int h){
+      		 if(h==0) return max= nums[0];
+     		 int currMax=Math.max(nums[h],nums[h]+helper(nums,h-1));
+       		 max=Math.max(max,currMax);
+       		 return currMax;
+    	}
+
+
 	static int MCS(int arr[]){ //o(n2)
 		int maxSum=Integer.MIN_VALUE;
 		for(int i=0;i<arr.length;++i){
