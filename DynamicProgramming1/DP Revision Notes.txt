@@ -1,0 +1,15 @@
+Solved List:-
+1)Factorial -------------------- fact(n)=n*fact(n-1); (n=0 || n=1)->1
+2)Fibonaci --------------------- fibonaci(n)=fibonaci(n-1)+fibonaci(n-2); 
+3)Longest Common SubString ----- LCS(char[] arr1,char[] arr2,arr1.length-1,arr2.length-1)=
+					arr1[i1]==arr[i2] -->1+LCS(arr1,arr2,i1-1,i2-1);
+					else
+					Max(LCS(arr1,arr2,i1-1,i2),LCS(arr1,arr2,i1,i2-1));
+				
+4)Maximum continuous Sub Array - MCS(int [] arr,arr.length-1) =
+					max(arr[i],MCS(arr,i-1));
+5)Longest Increasing SubArray  - Max(LIS[])  -> where -> LIS[i]=1+max(LIS[j]) where  (0>=j<i)
+6)Coin Change ------------------ minCoinChange(int [] coins,amount) ->  for(j=0->coins.length){
+
+										result[amount] = Math.min( result[amount] , minCoinChange( coins,amount-coins[j])
+									}	
