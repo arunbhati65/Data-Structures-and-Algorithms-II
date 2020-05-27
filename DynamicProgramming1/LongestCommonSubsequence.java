@@ -1,21 +1,18 @@
-import java.lang.Math;
-
-public class LongestCommonSubsequence{
-	
-	static int LCS(String str1,int l1,String str2,int l2){
-		if(l1==0||l2==0) return 0;
-		if(str1.charAt(l1-1)==str2.charAt(l2-1)){
-			return 1+LCS(str1,l1-1,str2,l2-1);
-		}else{
-			return Math.max(LCS(str1,l1,str2,l2-1),LCS(str1,l1-1,str2,l2));
-		}
-	}
-	
-	public static void main(String args[]){
-		String str1="aabcsdbc";
-		String str2="aaabbbcc";
-		
-		System.out.println("length of LCS is - "+LCS(str1,str1.length(),str2,str2.length()));
-
-	}
+class Solution {
+    
+    public int longestCommonSubsequence(String text1, String text2) {
+        Integer result[][]=new Integer[text1.length()+1][text2.length()+1];
+       return helper(text1.toCharArray(),text2.toCharArray(),text1.length()-1,text2.length()-1,result) ;
+    }
+    
+    int helper(char arr1[],char arr2[], int i1,int i2,Integer result[][]){
+        if(i1<0 || i2<0){ return 0;}
+        if(result[i1][i2]!=null) return result[i1][i2];
+        else if(arr1[i1]==arr2[i2]){
+           result[i1][i2]= 1+helper(arr1,arr2,i1-1,i2-1,result); 
+        }else{
+           result[i1][i2]= Math.max(helper(arr1,arr2,i1-1,i2,result),helper(arr1,arr2,i1,i2-1,result));
+        }
+        return result[i1][i2];
+    }
 }
