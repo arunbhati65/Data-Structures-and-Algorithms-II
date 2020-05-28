@@ -9,7 +9,11 @@ Solved List:-
 4)Maximum continuous Sub Array - MCS(int [] arr,arr.length-1) =
 					max(arr[i],MCS(arr,i-1));
 5)Longest Increasing SubArray  - Max(LIS[])  -> where -> LIS[i]=1+max(LIS[j]) where  (0>=j<i)
-6)Coin Change ------------------ minCoinChange(int [] coins,amount) ->  for(j=0->coins.length){
-
-										result[amount] = Math.min( result[amount] , minCoinChange( coins,amount-coins[j])
-									}	
+6)Coin Change ------------------ minCoinChange(int [] coins,amount) ->
+					        for(j=0->coins.length){
+						result[amount] = Math.min( result[amount] , minCoinChange( coins,amount-coins[j])
+						}	
+					//here we are repeating this for different amount leift
+7)KnapSAck --------------------- take one item or not - total two decisions required
+					//here we are repeating for different weight left
+					//also we are pickig one item only once
