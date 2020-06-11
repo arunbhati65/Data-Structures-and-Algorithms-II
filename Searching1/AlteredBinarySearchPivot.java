@@ -26,3 +26,28 @@ class AlteredBinarySearchPivot { //binary Search Altered
         }       
     } 
 }
+
+class Solution {  // revision one
+    public int search(int[] nums, int target) {
+        if(nums.length==0) return -1;
+        return binarySearch(nums,0,nums.length-1,target);          
+    }
+    
+    int binarySearch(int[] arr,int l,int h,int target){
+        if(l<=h){
+            int mid=(l+h)/2;
+            if(arr[mid]==target){return mid;}
+            else if(l<=mid-1 && arr[l]<=arr[mid-1]){
+                int val=binarySearch(arr,l,mid-1,target);
+                if(val>=0){return val;}
+                else return binarySearch(arr,mid+1,h,target);
+            }else{
+                int val=binarySearch(arr,mid+1,h,target);
+                if(val>=0){return val;}
+                else return binarySearch(arr,l,mid-1,target);
+            }
+        }
+        return -1;
+    }
+    
+}
