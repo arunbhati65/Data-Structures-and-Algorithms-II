@@ -42,3 +42,38 @@ class Solution {
             && visited[i][j]==null && arr[i][j]==1;
     }
 }
+
+//******************************
+class Solution { //revised
+    Boolean visited[][]; int maxArea=0,islandSize=0;
+    public int maxAreaOfIsland(int[][] matrix) {
+        if(matrix.length==0) return 0;
+        visited =new Boolean[matrix.length][matrix[0].length];
+        for(int i=0;i<matrix.length;++i){
+            for(int j=0;j<matrix[0].length;++j){
+                islandSize=0;
+                if(visited[i][j]==null && matrix[i][j]==1){
+                    DFS(matrix,i,j);
+                }
+                maxArea=Math.max(maxArea,islandSize);
+            }
+        }
+        return maxArea;
+    }
+    
+    private void DFS(int[][] matrix,int i,int j){
+        int[] x={0,0,-1,1};
+        int[] y={1,-1,0,0};
+        ++islandSize;
+        visited[i][j]=true;
+        for(int m=0;m<x.length;++m){
+            if(isSafe(matrix,i+x[m],j+y[m])){
+                DFS(matrix,i+x[m],j+y[m]);
+            }
+        }
+    }
+    
+    Boolean isSafe(int[][] matrix,int i,int j){
+        return i<matrix.length && i>=0 && j<matrix[0].length && j>=0 && visited[i][j]==null && matrix[i][j]==1;
+    }
+}
