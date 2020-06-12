@@ -19,3 +19,22 @@ class Solution {
         return maxArea;
     }
 }
+//*********************************8
+class Solution {   //Revised One
+    public int largestRectangleArea(int[] heights) {
+        Stack<Integer> s=new Stack<>();
+        s.push(-1);
+        int maxArea=0;
+        for(int i=0;i<heights.length;++i){
+            while(s.peek()!=-1 && heights[s.peek()]>=heights[i]){// 1 2 3 4 for decreasing 3
+                maxArea=Math.max(maxArea,heights[s.pop()]*(i-(s.peek()+1))); // calculate for (4<-)  , (4 & 3<-) , (2<-,3,4)   (1<-,2,3,4)
+            }
+            s.push(i);
+        }
+        while(s.peek()!=-1){ // for increasing 1 2 3 4 5 6 7
+            maxArea=Math.max(maxArea,heights[s.pop()]*(heights.length-(s.peek()+1)));
+        }
+        return maxArea;
+        
+    }
+}
