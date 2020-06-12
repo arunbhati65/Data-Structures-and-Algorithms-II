@@ -26,7 +26,8 @@ class Solution {
         int []x={0,0,-1,1};
         int []y={1,-1,0,0};
         for(int m=0;m<x.length;++m){
-            if(!(i+x[m]<0 || j+y[m]<0 || i+x[m]>=board.length || j+y[m]>=board[0].length || visited[i+x[m]][j+y[m]]!=null)){
+            if(!(i+x[m]<0 || j+y[m]<0 || i+x[m]>=board.length || j+y[m]>=board[0].length 
+						|| visited[i+x[m]][j+y[m]]!=null)){
                 visited[i+x[m]][j+y[m]]=true;
                 if(helper(board,word,i+x[m],j+y[m],s+board[i][j])) return true;
                 visited[i+x[m]][j+y[m]]=null; 
