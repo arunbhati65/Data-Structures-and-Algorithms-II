@@ -50,3 +50,19 @@ class Solution {
         return lastGood==0;
     }
 }
+
+class Solution {   //Jump Games2              
+    public int jump(int[] nums) {
+        int jump=0;
+        int maxPos=0;
+        int nextIndex=0;
+        for(int i=0;i<nums.length-1;++i){
+            maxPos=Math.max(maxPos,i+nums[i]);
+            if(i==nextIndex){
+                nextIndex=maxPos;
+                ++jump;
+            }
+        }
+        return jump;
+    }
+}
