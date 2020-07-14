@@ -21,3 +21,20 @@ class Solution {
         return result[i]=false;
     }
 }
+
+class Solution {
+    boolean memo[];
+    public boolean canJump(int[] nums) {
+        memo=new boolean[nums.length];
+        memo[nums.length-1]=true;
+        for(int i=nums.length-2;i>=0;--i){
+            for(int j=1;j<=nums[i];++j){
+                if(i+j<nums.length && memo[i+j]==true){
+                    memo[i]=true;
+                    break;
+                }
+            }
+        }
+        return memo[0];
+    }
+}
