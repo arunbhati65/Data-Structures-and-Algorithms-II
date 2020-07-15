@@ -23,3 +23,19 @@ public static void main(String args[]){
 }
 
 }
+
+class Solution {
+    int maxDepth=Integer.MIN_VALUE;
+    public int maxDepth(TreeNode root) {
+        if (root==null) return 0;
+        DFS(root,1);
+        return maxDepth;
+    }
+    
+    void DFS(TreeNode node,int depth){
+        if(node == null) return ;
+        maxDepth=Math.max(maxDepth,depth);
+        DFS(node.left,depth+1);
+        DFS(node.right,depth+1);
+    }
+}
