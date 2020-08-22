@@ -40,6 +40,22 @@ public class MaximumContiguousSubsequence{ //
 		}
 		return maxSum;
 	}
+
+    static int solve(String S){ // linear revised
+        char[] A=S.toCharArray();
+        HashMap<Character,Integer> map=new HashMap<>();
+        map.put('A',-1);
+        map.put('C',1);
+        int[] M=new int[S.length()];
+        M[0]=map.get(A[0]);
+        int maxSum=map.get(A[0]);
+        for(int i=1;i<A.length;++i){
+            M[i]=Math.abs(map.get(A[i]))>Math.abs(M[i-1]+map.get(A[i]))?map.get(A[i]):M[i-1]+map.get(A[i]);
+            maxSum=Math.abs(maxSum)>Math.abs(M[i])?maxSum:M[i];
+        }
+        maxSum=Math.abs(maxSum);
+        return maxSum;
+    }
 	
 	public static void main(String args[]){
 		int arr[]={-2,11,-4,13,-5,2};	//20	
