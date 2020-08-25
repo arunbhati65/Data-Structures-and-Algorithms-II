@@ -19,6 +19,7 @@ class Solution {
         }
         return result;
     }
+    
 
     Double getEuclideanDistance(int ob[]){
         int x=ob[0],y=ob[1];
