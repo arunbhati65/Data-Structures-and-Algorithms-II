@@ -38,3 +38,28 @@ class Solution {   //Revised One
         
     }
 }
+
+
+class Solution {//Faulty
+    public int largestRectangleArea(int[] arr) {
+        if(arr.length==0) return 0;
+        int largestArea=arr[0]*1;
+        Stack<Integer> stack=new Stack<>();
+        stack.push(0);
+        for(int i=1;i<arr.length;++i){
+                while(!stack.isEmpty()&&arr[i]<=arr[stack.peek()]){
+                    int pop=stack.pop();
+                    int area=stack.isEmpty()?arr[pop]*(i-0):arr[pop]*(i-pop);
+                    largestArea=Math.max(largestArea,area);
+                }
+            stack.push(i);
+        }
+        while(!stack.isEmpty()){
+           int pop=stack.pop();
+           int area=stack.isEmpty()?arr[pop]*(arr.length-0):arr[pop]*(arr.length-pop);
+           largestArea=Math.max(largestArea,area);
+        }
+        return largestArea;
+    }
+}
+
