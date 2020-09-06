@@ -1,0 +1,40 @@
+class Solution { //Faulty Code first attempt
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> set=new HashSet<>();
+        wordDict.forEach(word->{
+          set.add(word);  
+        });
+        int l=0,h=0;
+        int lastFoundindex=-1;
+        while(h<s.length()){
+            String subString=s.substring(l,h+1);
+            if(set.contains(subString)){
+                lastFoundindex=h;
+                l=h+1;
+                ++h;
+            }else{
+                ++h;
+            }
+        }
+        return lastFoundindex==s.length()-1;
+    }
+}
+
+class Solution {
+    Boolean[] memo;
+    public boolean wordBreak(String s, List<String> wordDict) {
+        memo=new Boolean[s.length()+1];
+        return helper(new HashSet(wordDict),s,0);
+    }
+    
+    boolean helper(Set<String> set,String s,int start){
+        if(memo[start]!=null) return memo[start];
+        if(start==s.length()) return true;
+        for(int end=start;end<s.length();++end){
+            if(set.contains(s.substring(start,end+1)) && helper(set,s,end+1)){
+                return true;
+            }
+        }
+        return memo[start]=false;
+    }
+}
