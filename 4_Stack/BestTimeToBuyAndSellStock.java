@@ -18,3 +18,21 @@ class Solution {
         return maxProfit;
     }
 }
+
+class Solution {//Revision
+    public int maxProfit(int[] prices) {
+        if(prices.length==0) return 0;
+        int lowest=0;
+        int maxProfit=Integer.MIN_VALUE;
+        for(int i=1;i<prices.length;++i){
+            if(prices[lowest]>prices[i]){
+                lowest=i;
+            }else{
+                int profit=prices[i]-prices[lowest];
+                maxProfit=Math.max(maxProfit,profit);
+            }
+        }
+        if(maxProfit==Integer.MIN_VALUE) return 0;
+        return maxProfit;
+    }
+}
