@@ -5,6 +5,45 @@ is not a multiple of k then left-out nodes in the end should remain as it is.
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode curr=head;
+        int size=0;
+        while(curr!=null){
+            curr=curr.next;
+            ++size;
+        }
+        ListNode dummy=new ListNode();
+        dummy.next=head;
+        ListNode temp=dummy;
+        int i=0;
+        while(temp!=null && size-i>=k){
+            temp=reverseKElementsOnly(temp,k);
+            i=i+k;
+        }
+        return dummy.next;
+        
+    }
+    
+    ListNode reverseKElementsOnly(ListNode A,int k){
+        int i=0;
+        ListNode head=A.next;
+        ListNode curr=head,prev=null,next=null;
+        while(i<k && curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            ++i;
+        }
+        A.next=prev;
+        if(head!=null){
+            head.next=curr;    
+        }
+        return head;
+    }
+}
+
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr=head,prevTail=null,newHead=null;
         while(curr!=null){
             int count=0;
