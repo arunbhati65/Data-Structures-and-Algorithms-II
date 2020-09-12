@@ -2,7 +2,6 @@
 BackTracking
 Kadane
 Graph Algo - Prism Krushal Cut Vertex
-BinarySearch Modified
 String Pattern Matching
 Trie
 Dictionary Search
