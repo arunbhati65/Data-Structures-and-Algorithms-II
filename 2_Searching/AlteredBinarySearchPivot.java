@@ -1,5 +1,28 @@
 /*
 Search in Rotated Sorted Array*/
+
+class Solution {//[4,5,6,7,0,1,2]
+    public int search(int[] nums, int target) {
+        return helper(nums,target,0,nums.length-1);
+    }
+    
+    int helper(int[] nums,int target,int l,int h){
+        if(l>h) return -1;
+        int mid=l+(h-l)/2;
+        if(nums[mid]==target){
+            return mid;
+        }else if(nums[l]<=nums[mid]){
+            int index1= helper(nums,target,l,mid-1);
+            if(index1>=0) return index1;
+            return helper(nums,target,mid+1,h);
+        }
+        int index2=helper(nums,target,mid+1,h);
+        if(index2>=0) return index2;
+        return helper(nums,target,l,mid-1);
+    }
+    
+}
+
 class AlteredBinarySearchPivot { //binary Search Altered
     public int search(int[] arr, int target) {
        return srch(arr,0,arr.length-1,target);
