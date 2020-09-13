@@ -24,6 +24,25 @@ class TwoSum{
         return result;
     }
 
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int l=0,h=nums.length-1;
+        while(l<h){
+            int sum=nums[l]+nums[h];
+            if(sum==target){
+                int[] ans={l+1,h+1};
+               return ans; 
+            } 
+            else if(sum>target){
+                --h;
+            }else if(sum<target){
+                ++l;
+            }
+        }
+        return null;
+    }
+}
+
     public static int[] twoSumUsingHashMap(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
