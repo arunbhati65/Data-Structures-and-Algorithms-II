@@ -1,37 +1,50 @@
-/*
-You are given two non-empty linked lists representing two non-negative integers. 
-The digits are stored in reverse order and each of their nodes contain a single digit. 
-Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-*/
-public class AddTwoNumber {
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int carry=0,sum;
-        ListNode current1=l1,current2=l2,prev1=null,prev2=null;
-        while(current1 !=null && current2 !=null){
-            sum=current1.val+current2.val+carry;
+        ListNode dummy=new ListNode();
+        ListNode curr=dummy;
+        int carry=0;
+        while(l1!=null && l2!=null){
+            int sum=carry+l1.val+l2.val;
+            carry=0;
+            curr.next=new ListNode(sum%10);
             carry=sum/10;
-            current1.val=sum%10;
-            prev1=current1; prev2=current2;
-            current1=current1.next; current2=current2.next;
+            l1=l1.next;
+            l2=l2.next;
+            curr=curr.next;
         }
-        while(current1!=null){
-            sum= current1.val+carry;
-            current1.val=sum%10;
+        
+        while(l1!=null){
+            int sum=carry+l1.val;
+            carry=0;
+            curr.next=new ListNode(sum%10);
             carry=sum/10;
-            prev1=current1;
-            current1=current1.next;
+            l1=l1.next;
+            curr=curr.next;
         }
-        while(current2!=null){
-            sum= current2.val+carry;
-            prev1.next=new ListNode(sum%10);
+        
+        while(l2!=null){
+            int sum=carry+l2.val;
+            carry=0;
+            curr.next=new ListNode(sum%10);
             carry=sum/10;
-            prev1=prev1.next;
-            current2=current2.next;
+            l2=l2.next; 
+            curr=curr.next;
         }
+        
         if(carry!=0){
-            prev1.next=new ListNode(carry);
+            curr.next=new ListNode(carry);
         }
-       return l1; 
+        
+        return dummy.next;
     }
 }
