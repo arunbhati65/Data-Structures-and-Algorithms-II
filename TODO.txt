@@ -1,5 +1,4 @@
 32 Most Frequent Questions leetcode pending
-BackTracking
 Kadane
 Graph Algo - Prism Krushal Cut Vertex
 String Pattern Matching
