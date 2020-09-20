@@ -1,4 +1,43 @@
 class Solution {
+    public String minWindow(String txt, String pat) {
+        int textLen=txt.length();
+        int patLen=pat.length();
+        int[] needToFind=new int[256];
+        for(int i=0;i<patLen;++i){
+            needToFind[pat.charAt(i)]++;
+        }
+        int[] hasFound=new int[256];
+        int minWindLen=Integer.MAX_VALUE;
+        int minWinBegin=0;
+        int minWinEnd=0;
+        int count=0;
+        for(int begin=0,end=0;end<textLen;end++){
+            if(needToFind[txt.charAt(end)]==0) continue;
+            hasFound[txt.charAt(end)]++;
+            if(hasFound[txt.charAt(end)]<=needToFind[txt.charAt(end)]){
+                ++count;
+            }
+            if(count==patLen){
+                while(needToFind[txt.charAt(begin)]==0 || 
+                      hasFound[txt.charAt(begin)]>needToFind[txt.charAt(begin)]){
+                    if(hasFound[txt.charAt(begin)]>needToFind[txt.charAt(begin)]){
+                      hasFound[txt.charAt(begin)]--;  
+                    }
+                    begin++;
+                }
+                int windowLen = end - begin +1;
+                if(windowLen<minWindLen){
+                    minWinBegin=begin;
+                    minWinEnd=end;
+                    minWindLen=windowLen;
+                }
+            }
+        }
+        return  count==patLen?txt.substring(minWinBegin,minWinEnd+1):"";
+    }
+}
+
+class Solution {
     public String minWindow(String s, String t) {
         Map<Character,Integer> dict=new HashMap<>();
         for(char chr:t.toCharArray()){
