@@ -1,0 +1,2 @@
+Greedy - JumpGame(M)
+DP- JumpGame(M)
