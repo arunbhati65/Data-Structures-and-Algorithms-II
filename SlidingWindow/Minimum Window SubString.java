@@ -6,6 +6,7 @@ class Solution {
         for(int i=0;i<patLen;++i){
             needToFind[pat.charAt(i)]++;
         }
+
         int[] hasFound=new int[256];
         int minWindLen=Integer.MAX_VALUE;
         int minWinBegin=0;
