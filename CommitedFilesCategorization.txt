@@ -1,2 +1,20 @@
-Greedy - JumpGame(M)
-DP- JumpGame(M)
+Greedy - JumpGame(M,goodPosition),meetingRoom(SortArray,pQ),mergeIntervals(sortArray,PQ)
+DP- JumpGame(M,forLoop)
+String - removeAllAdjacentDuplicates(E,StringBuilder)
+SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict)
+SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
+Tree- BTMaximumPathSum(DFS),SerializeAndDeserializeBT(DFS),Diameter(Depth modified,global variable),LCA(left and right not null return node),SpiralTrraverse(2 Stack),
+      SymetricTree(DFS,left,right pass as arguments),validateBST(inOrder)
+heap-medianFromStreamOfData(minHeap,MaxHeap),mergeKSortedList(pq)
+Stack-minStack(2 stack,linkedList)
+Design-lRU(Map,doublyLinkedList)
+List-addTwoNumber(while Loop),ReverseNodeInKGroup(ReverSe Function with limit K,calculate total element first,dummy),
+     CloneWithRandomPointer(HashMap or changeStructureoFOriginal List),reverseLinkedList(prev)
+selection - MedianOfTwoSortedArray(Binary Searching,Ypos=(X+Y+1)/2-XPos,XPosmin,XPosmax,YPosmin,YPosmax),
+            TopKFrequentElement(HashMap,partiton method),KthLargestElement(partition)
+Searching - modifiedBinarySearch(search is sorted parst first)
+Array-TwoSum(HashMap or Sort),ThreeSum(TwoSum),FloodFill(2 array),ProductOfArrayAcceptSelf(2 array left and right)
+Hashing-GroupAnagram
+Matrix- numberOfIslands(DFS,visitedFirstTimeCount),WordSearch(DFS,reach index n-1 of pattern to search)
+Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop),GenerateParenthesis(forLoop)
+
