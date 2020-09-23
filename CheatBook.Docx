@@ -5,10 +5,13 @@
             Most Common Word(forLoop,split by space or check for empty spaces,HashMap),
             ContainerWithMostWater(most Distance,Contract the lowest one,Two Pointer),
             TrappingRainWater(2 array)
-2)DP- JumpGame(M,forLoop),maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
+2)DP- JumpGame(M,forLoop),
+      maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
       WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
       CoinChange(recursion+forLoop,maximum value is amount+1,memo),
-      ClimbingStairs(************)
+      ClimbingStairs(************),
+      UniquePaths(********),
+      Edit Distance(************)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
                           Permutations(forLoop,OrderNeed to be changed,swap)
                           GenerateParenthesis(forLoop)
@@ -16,6 +19,10 @@
            ReverseString(Two Pointer) ,
            FirstUniqueCharaterInAString(2 for loop) ,
            ATOI(*********)
+           Implement strStr()(*******)
+           Reverse String(*******)
+           Reverse Words in a String(******)
+           Find All Anagrams in a String(********)
 5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) ,
                  MinimumWindowSubString(HashMap,patCount,dict),
                  SlidingWindowMax(***********)
@@ -32,6 +39,21 @@
         SymetricTree(DFS,left,right pass as arguments),
         validateBST(inOrder),
         BTRightSideVeiw(LevelOrderTraversal),
+        DepthOfBT(max of left ,right),
+        ConstructBTFromPreOrderInOrderTraversal(********)
+        Flatten Binary Tree to Linked List(*********)
+        Convert Sorted List to Binary Search Tree(*********)
+        Construct Binary Tree from Inorder and Postorder Traversal(***********)
+        Kth Smallest Element in a BST(*******)
+        Populating Next Right Pointers in Each Node(******)
+        Range Sum of BST(*********)
+        All Elements in Two Binary Search Trees(*********)
+        Invert Binary Tree(***********)
+        Binary Tree Vertical Order Traversal(********)
+        All Nodes Distance K in Binary Tree(*******)
+        Boundary of Binary Tree(********)
+        Two Sum BSTs(*******)
+        Binary Search Tree to Greater Sum Tree(*******)
 8)Heap- medianFromStreamOfData(minHeap,MaxHeap),
         mergeKSortedList(pq),
         MergeSortedArray(pq,Custom Class)
@@ -45,8 +67,13 @@
         reverseLinkedList(prev) ,
         middleOfALinkedList(2 pointer),
         RemoveNthNodeFromEndOfList(2Pointer),
+        Intersection of Two Linked Lists(******)
+        Sort List(*********)
+        Linked List Cycle(***********)
 11)Design-     lRU(Map,doublyLinkedList),
-               InsertDeleteGetRandomO1Time(Map,LinkedList)
+               InsertDeleteGetRandomO1Time(Map,LinkedList),
+               Design HashMap(*******)
+               Design HashSet(******)
 12)selection - MedianOfTwoSortedArray(Binary Searching,Ypos=(X+Y+1)/2-XPos,XPosmin,XPosmax,YPosmin,YPosmax),
                TopKFrequentElement(HashMap,partiton method),
                KthLargestElement(partition)  
@@ -57,17 +84,27 @@
          FloodFill(2 array),
          ProductOfArrayAcceptSelf(2 array left and right),
          RemoveDuplicatesFromSortedArray(index++ if not equal to prev)
+         Find First and Last Position of Element in Sorted Array(*********)
+         Maximum Product of Two Elements in an Array(**********)
+         Move Zeroes(*******)
 15)Hashing-GroupAnagram
 16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),
            WordSearch(DFS,reach index n-1 of pattern to search),
            FloodFill(DFS),
            MaxAreaOfIsland,
            Rotting Orange,
-           Game Of Life
+           GameOfLife,
+           SearchAMatrix(*************)
+           Set Matrix Zeroes(*********)
+           Surrounded Regions(********)
 17)Math-CountPrimes(visited,multiplication) ,
         FirstMissingNumber(n)(n+1)/2),
         ReverseInteger(/10 %10 until 0)
 19)BitManupilation - BinaryNumberToDcimalNumber(s^index)
+20)Graph- Course Schedule(*******)
+          Find the Town Judge(*********)
+          Critical Connections in a Network(*******)
+          Graph Valid Tree(**********)
 
 
 
