@@ -14,7 +14,7 @@
 7)Tree- BTMaximumPathSum(DFS),SerializeAndDeserializeBT(DFS),Diameter(Depth modified,global variable),LCA(left and right not null return node),SpiralTrraverse(2 Stack),
       SymetricTree(DFS,left,right pass as arguments),validateBST(inOrder)
 8)Heap-medianFromStreamOfData(minHeap,MaxHeap),mergeKSortedList(pq)
-9)Stack-minStack(2 stack,linkedList)
+9)Stack-minStack(2 stack,linkedList) , VaildParenthesis(Stack,hashMap)
 10)List-addTwoNumber(while Loop),ReverseNodeInKGroup(ReverSe Function with limit K,calculate total element first,dummy),
      CloneWithRandomPointer(HashMap or changeStructureoFOriginal List),reverseLinkedList(prev) 
 11)Design-lRU(Map,doublyLinkedList)
