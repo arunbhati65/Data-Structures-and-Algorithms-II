@@ -3,11 +3,14 @@
     WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
     CoinChange(recursion+forLoop,maximum value is amount+1,memo)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
-                        Permutations(forLoop,OrderNeed to be changed)
+                        Permutations(forLoop,OrderNeed to be changed,swap)
                         GenerateParenthesis(forLoop)
 4)String - removeAllAdjacentDuplicates(E,StringBuilder)
-5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict)
+5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict),SlidingWindowMax(***********)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
+              longestPalindromicSubSequence(***********)
+              longestCommonSubSequence(***********)
+              longestIncreasingSubSequence(***********)
 7)Tree- BTMaximumPathSum(DFS),SerializeAndDeserializeBT(DFS),Diameter(Depth modified,global variable),LCA(left and right not null return node),SpiralTrraverse(2 Stack),
       SymetricTree(DFS,left,right pass as arguments),validateBST(inOrder)
 8)Heap-medianFromStreamOfData(minHeap,MaxHeap),mergeKSortedList(pq)
@@ -21,3 +24,8 @@
 14)Array-TwoSum(HashMap or Sort),ThreeSum(TwoSum),FloodFill(2 array),ProductOfArrayAcceptSelf(2 array left and right)
 15)Hashing-GroupAnagram
 16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),WordSearch(DFS,reach index n-1 of pattern to search)
+
+
+
+
+*********** Pending Cheats
