@@ -1,31 +1,53 @@
-1)Greedy - JumpGame(M,goodPosition),meetingRoom(SortArray,pQ),mergeIntervals(sortArray,PQ),bestTimeToBuyAndSellStock(minStock,and maxProfit)
+1)Greedy -  JumpGame(M,goodPosition),
+            meetingRoom(SortArray,pQ),
+            mergeIntervals(sortArray,PQ),
+            bestTimeToBuyAndSellStock(minStock,and maxProfit),
+            Most Common Word(forLoop,split by space or check for empty spaces,)
 2)DP- JumpGame(M,forLoop),maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
-    WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
-    CoinChange(recursion+forLoop,maximum value is amount+1,memo)
+      WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
+      CoinChange(recursion+forLoop,maximum value is amount+1,memo)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
-                        Permutations(forLoop,OrderNeed to be changed,swap)
-                        GenerateParenthesis(forLoop)
-4)String - removeAllAdjacentDuplicates(E,StringBuilder),ReverseString(Two Pointer) , FirstUniqueCharaterInAString(2 for loop)
-5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict),SlidingWindowMax(***********)
+                          Permutations(forLoop,OrderNeed to be changed,swap)
+                          GenerateParenthesis(forLoop)
+4)String - removeAllAdjacentDuplicates(E,StringBuilder),
+           ReverseString(Two Pointer) ,
+           FirstUniqueCharaterInAString(2 for loop) 
+5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) ,
+                 MinimumWindowSubString(HashMap,patCount,dict),
+                 SlidingWindowMax(***********)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
               longestPalindromicSubSequence(***********)
               longestCommonSubSequence(***********)
               longestIncreasingSubSequence(***********)
-7)Tree- BTMaximumPathSum(DFS),SerializeAndDeserializeBT(DFS),Diameter(Depth modified,global variable),LCA(left and right not null return node),SpiralTrraverse(2 Stack),
-      SymetricTree(DFS,left,right pass as arguments),validateBST(inOrder)
-8)Heap-medianFromStreamOfData(minHeap,MaxHeap),mergeKSortedList(pq)
-9)Stack-minStack(2 stack,linkedList) , VaildParenthesis(Stack,hashMap)
-10)List-addTwoNumber(while Loop),ReverseNodeInKGroup(ReverSe Function with limit K,calculate total element first,dummy),
-     CloneWithRandomPointer(HashMap or changeStructureoFOriginal List),reverseLinkedList(prev) 
-11)Design-lRU(Map,doublyLinkedList)
+7)Tree- BTMaximumPathSum(DFS),SerializeAndDeserializeBT(DFS),
+        Diameter(Depth modified,global variable),
+        LCA(left and right not null return node),
+        SpiralTrraverse(2 Stack),
+        SymetricTree(DFS,left,right pass as arguments),
+        validateBST(inOrder)
+8)Heap- medianFromStreamOfData(minHeap,MaxHeap),
+        mergeKSortedList(pq)
+9)Stack-minStack(2 stack,linkedList) ,
+        VaildParenthesis(Stack,hashMap)
+10)List-addTwoNumber(while Loop),
+        ReverseNodeInKGroup(ReverSe Function with limit K,calculate total element first,dummy),
+        CloneWithRandomPointer(HashMap or changeStructureoFOriginal List),
+        reverseLinkedList(prev) 
+11)Design-     lRU(Map,doublyLinkedList)
 12)selection - MedianOfTwoSortedArray(Binary Searching,Ypos=(X+Y+1)/2-XPos,XPosmin,XPosmax,YPosmin,YPosmax),
-               TopKFrequentElement(HashMap,partiton method),KthLargestElement(partition)  
+               TopKFrequentElement(HashMap,partiton method),
+               KthLargestElement(partition)  
                KClosestPointsToOrigin
 13)Searching - modifiedBinarySearch(search is sorted parst first)
-14)Array-TwoSum(HashMap or Sort),ThreeSum(TwoSum),FloodFill(2 array),ProductOfArrayAcceptSelf(2 array left and right)
+14)Array-TwoSum(HashMap or Sort),
+         ThreeSum(TwoSum),
+         FloodFill(2 array),
+         ProductOfArrayAcceptSelf(2 array left and right)
 15)Hashing-GroupAnagram
-16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),WordSearch(DFS,reach index n-1 of pattern to search)
-17)Math- CountPrimes(visited,multiplication) , FirstMissingNumber(n)(n+1)/2)
+16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),
+           WordSearch(DFS,reach index n-1 of pattern to search)
+17)Math-CountPrimes(visited,multiplication) ,
+        FirstMissingNumber(n)(n+1)/2)
 19)BitManupilation - BinaryNumberToDcimalNumber(s^index)
 
 
