@@ -1,5 +1,5 @@
 Greedy - JumpGame(M,goodPosition),meetingRoom(SortArray,pQ),mergeIntervals(sortArray,PQ)
-DP- JumpGame(M,forLoop)
+DP- JumpGame(M,forLoop),maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
 String - removeAllAdjacentDuplicates(E,StringBuilder)
 SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict)
 SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
