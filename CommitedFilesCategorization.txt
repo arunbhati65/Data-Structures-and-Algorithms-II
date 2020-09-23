@@ -1,5 +1,6 @@
-Greedy - JumpGame(M,goodPosition),meetingRoom(SortArray,pQ),mergeIntervals(sortArray,PQ)
+Greedy - JumpGame(M,goodPosition),meetingRoom(SortArray,pQ),mergeIntervals(sortArray,PQ),bestTimeToBuyAndSellStock(minStock,and maxProfit)
 DP- JumpGame(M,forLoop),maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
+    WordBreak(slidingWindow wont work,recursion to check all posibility,memo to reduce time complexity)
 String - removeAllAdjacentDuplicates(E,StringBuilder)
 SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict)
 SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
