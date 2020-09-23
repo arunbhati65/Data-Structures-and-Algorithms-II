@@ -5,7 +5,7 @@
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
                         Permutations(forLoop,OrderNeed to be changed,swap)
                         GenerateParenthesis(forLoop)
-4)String - removeAllAdjacentDuplicates(E,StringBuilder)
+4)String - removeAllAdjacentDuplicates(E,StringBuilder),ReverseString(Two Pointer) , FirstUniqueCharaterInAString(2 for loop)
 5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) , MinimumWindowSubString(HashMap,patCount,dict),SlidingWindowMax(***********)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
               longestPalindromicSubSequence(***********)
@@ -19,11 +19,14 @@
      CloneWithRandomPointer(HashMap or changeStructureoFOriginal List),reverseLinkedList(prev) 
 11)Design-lRU(Map,doublyLinkedList)
 12)selection - MedianOfTwoSortedArray(Binary Searching,Ypos=(X+Y+1)/2-XPos,XPosmin,XPosmax,YPosmin,YPosmax),
-            TopKFrequentElement(HashMap,partiton method),KthLargestElement(partition)         
+               TopKFrequentElement(HashMap,partiton method),KthLargestElement(partition)  
+               KClosestPointsToOrigin
 13)Searching - modifiedBinarySearch(search is sorted parst first)
 14)Array-TwoSum(HashMap or Sort),ThreeSum(TwoSum),FloodFill(2 array),ProductOfArrayAcceptSelf(2 array left and right)
 15)Hashing-GroupAnagram
 16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),WordSearch(DFS,reach index n-1 of pattern to search)
+17)Math- CountPrimes(visited,multiplication) , FirstMissingNumber(n)(n+1)/2)
+19)BitManupilation - BinaryNumberToDcimalNumber(s^index)
 
 
 
