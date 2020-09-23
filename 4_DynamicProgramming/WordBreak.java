@@ -38,3 +38,23 @@ class Solution {
         return memo[start]=false;
     }
 }
+
+class Solution {
+    HashMap<String,Boolean> map=new HashMap<>();
+    public boolean wordBreak(String s, List<String> wordDict) {
+        if(map.containsKey(s)) return map.get(s);
+        if(s.length()==0){
+            map.put(s,true);
+            return true; 
+        }
+        Set<String> set=new HashSet(wordDict);
+        for(int h=0;h<s.length();++h){
+            if(set.contains(s.substring(0,h+1)) && wordBreak(s.substring(h+1,s.length()),wordDict)){
+                map.put(s,true);
+                return true;
+            }            
+        }
+        map.put(s,false);
+        return false;
+    }
+}
