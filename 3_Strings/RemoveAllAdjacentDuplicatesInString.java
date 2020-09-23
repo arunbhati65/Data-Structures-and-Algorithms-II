@@ -22,3 +22,31 @@ class Solution {
         return sb.toString();
     }
 }
+
+class Solution {
+    public String removeDuplicates(String S) {
+         char [] chars=S.toCharArray();
+         for(int i=1;i<chars.length;++i){
+             int prevIndexToCheck=getPrevIndex(chars,i);
+             if(chars[prevIndexToCheck]==chars[i]){
+                 chars[prevIndexToCheck]=chars[i]='#';
+             }
+         }
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<chars.length;++i){
+            if(chars[i]!='#'){
+                sb.append(chars[i]);
+            }
+        }
+        return sb.toString();
+    }
+    
+    int getPrevIndex(char[] chars,int currIndex){
+        int i=currIndex-1;
+        while(i>=0 && chars[i]=='#'){
+            --i;            
+        }
+        return i<0?0:i;
+    }
+    
+}
