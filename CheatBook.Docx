@@ -104,7 +104,8 @@
         FirstMissingNumber(n)(n+1)/2),
         ReverseInteger(/10 %10 until 0),
         SquareRoot(binary Search),
-        FirstMissingPositiveNumber(negate by index,range is limited)
+        FirstMissingPositiveNumber(negate by index,range is limited),
+        FindDuplicateElement(negate by index,range is limited)
 19)BitManupilation - BinaryNumberToDcimalNumber(s^index)
 20)Graph- Course Schedule(*******)
           Find the Town Judge(*********)
