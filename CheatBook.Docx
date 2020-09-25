@@ -9,6 +9,7 @@
       maximumSubarray(S[i]=max(S[i-1]+arr[i],arr[i]))
       WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
       CoinChange(recursion+forLoop,maximum value is amount+1,memo),
+      MinpathSum(DP)
       ClimbingStairs(************),
       UniquePaths(********),
       Edit Distance(************)
@@ -95,6 +96,7 @@
            MaxAreaOfIsland,
            Rotting Orange,
            GameOfLife,
+           MinimumPathSum(DP)
            SearchAMatrix(*************)
            Set Matrix Zeroes(*********)
            Surrounded Regions(********)
