@@ -78,6 +78,7 @@
                TopKFrequentElement(HashMap,partiton method),
                KthLargestElement(partition)  
                KClosestPointsToOrigin
+               KthLargestElementInAStreamOfData(partiition,MINHeap)
 13)Searching - modifiedBinarySearch(search is sorted parst first)
 14)Array-TwoSum(HashMap or Sort),
          ThreeSum(TwoSum),
