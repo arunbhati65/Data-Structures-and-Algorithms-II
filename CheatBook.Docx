@@ -100,7 +100,8 @@
            Surrounded Regions(********)
 17)Math-CountPrimes(visited,multiplication) ,
         FirstMissingNumber(n)(n+1)/2),
-        ReverseInteger(/10 %10 until 0)
+        ReverseInteger(/10 %10 until 0),
+        SquareRoot(binary Search)
 19)BitManupilation - BinaryNumberToDcimalNumber(s^index)
 20)Graph- Course Schedule(*******)
           Find the Town Judge(*********)
