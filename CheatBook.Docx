@@ -12,7 +12,7 @@
       MinpathSum(DP)
       ClimbingStairs(DP no recursion solution),
       UniquePaths(DP solution),
-      Edit Distance(************)
+      Edit Distance(DP Math.min 3 times)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
               longestPalindromicSubSequence(***********)
               longestCommonSubSequence(***********)
