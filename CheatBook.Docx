@@ -13,6 +13,11 @@
       ClimbingStairs(************),
       UniquePaths(********),
       Edit Distance(************)
+6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
+              longestPalindromicSubSequence(***********)
+              longestCommonSubSequence(***********)
+              longestIncreasingSubSequence(***********)
+              longestConsecutiveSequence(************)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
                           Permutations(forLoop,OrderNeed to be changed,swap)
                           GenerateParenthesis(forLoop)
@@ -27,11 +32,6 @@
 5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) ,
                  MinimumWindowSubString(HashMap,patCount,dict),
                  SlidingWindowMax(***********)
-6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
-              longestPalindromicSubSequence(***********)
-              longestCommonSubSequence(***********)
-              longestIncreasingSubSequence(***********)
-              longestConsecutiveSequence(************)
 7)Tree- BTMaximumPathSum(DFS),
         SerializeAndDeserializeBT(DFS),
         Diameter(Depth modified,global variable),
