@@ -10,7 +10,7 @@
       WordBreak(slidingWindow wont work,recursion+for Loop to check all posibility,memo to reduce time complexity)
       CoinChange(recursion+forLoop,maximum value is amount+1,memo),
       MinpathSum(DP)
-      ClimbingStairs(************),
+      ClimbingStairs(DP no recursion solution),
       UniquePaths(********),
       Edit Distance(************)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
