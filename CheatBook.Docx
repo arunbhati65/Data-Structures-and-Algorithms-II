@@ -25,9 +25,9 @@
            ReverseString(Two Pointer) ,
            FirstUniqueCharaterInAString(2 for loop) ,
            ATOI(*********)
-           Implement strStr()(*******)
-           Reverse String(*******)
-           Reverse Words in a String(******)
+           Implement strStr() KMP(*******)
+           Reverse String(two pointer)
+           Reverse Words in a String(two pointer)
            Find All Anagrams in a String(********)
 5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) ,
                  MinimumWindowSubString(HashMap,patCount,dict),
