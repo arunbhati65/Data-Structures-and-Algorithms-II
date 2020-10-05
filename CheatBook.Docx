@@ -81,6 +81,7 @@
                KClosestPointsToOrigin
                KthLargestElementInAStreamOfData(partiition,MINHeap)
 13)Searching - modifiedBinarySearch(search is sorted parst first)
+               kadane(********)
 14)Array-TwoSum(HashMap or Sort),
          ThreeSum(TwoSum),
          FloodFill(2 array),
@@ -112,6 +113,10 @@
           Find the Town Judge(*********)
           Critical Connections in a Network(*******)
           Graph Valid Tree(**********)
+21)Trie- **********
+22)Divide and Concur *********
+23)Greedy Algo ********
+
 
 
 
