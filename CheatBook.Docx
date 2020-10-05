@@ -96,8 +96,9 @@
            MaxAreaOfIsland,
            Rotting Orange,
            GameOfLife,
-           MinimumPathSum(DP)
-           SearchAMatrix(*************)
+           MinimumPathSum(DP),
+           RotateMatrix(transponse and suffle columns),
+           SearchAMatrix(binary search)
            Set Matrix Zeroes(*********)
            Surrounded Regions(********)
 17)Math-CountPrimes(visited,multiplication) ,
