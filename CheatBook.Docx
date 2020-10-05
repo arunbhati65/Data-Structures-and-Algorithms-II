@@ -11,7 +11,7 @@
       CoinChange(recursion+forLoop,maximum value is amount+1,memo),
       MinpathSum(DP)
       ClimbingStairs(DP no recursion solution),
-      UniquePaths(********),
+      UniquePaths(DP solution),
       Edit Distance(************)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
               longestPalindromicSubSequence(***********)
