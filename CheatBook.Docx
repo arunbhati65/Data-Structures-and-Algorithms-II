@@ -41,7 +41,7 @@
         validateBST(inOrder),
         BTRightSideVeiw(LevelOrderTraversal),
         DepthOfBT(max of left ,right),
-        ConstructBTFromPreOrderInOrderTraversal(********)
+        ConstructBTFromPreOrderInOrderTraversal(map of inorder values and index, global variable for preorder, range of l and h for inorder , return null l>h and preorderVariable==n)
         Flatten Binary Tree to Linked List(*********)
         Convert Sorted List to Binary Search Tree(*********)
         Construct Binary Tree from Inorder and Postorder Traversal(***********)
