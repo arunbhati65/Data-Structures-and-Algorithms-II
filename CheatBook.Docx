@@ -14,6 +14,7 @@
       UniquePaths(DP solution),
       Edit Distance(DP Math.min 3 times)
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
+              Find All Anagrams in a String(********)
               longestPalindromicSubSequence(***********)
               longestCommonSubSequence(***********)
               longestIncreasingSubSequence(***********)
@@ -24,11 +25,10 @@
 4)String - removeAllAdjacentDuplicates(E,StringBuilder),
            ReverseString(Two Pointer) ,
            FirstUniqueCharaterInAString(2 for loop) ,
-           ATOI(*********)
+           ATOI('0' && '9' numbers between these character including these two)
            Implement strStr() KMP(*******)
            Reverse String(two pointer)
            Reverse Words in a String(two pointer)
-           Find All Anagrams in a String(********)
 5)SlidingWindow- longestSubStringWithoutRepeatingCharacter(HashMap) ,
                  MinimumWindowSubString(HashMap,patCount,dict),
                  SlidingWindowMax(***********)
@@ -68,9 +68,9 @@
         reverseLinkedList(prev) ,
         middleOfALinkedList(2 pointer),
         RemoveNthNodeFromEndOfList(2Pointer),
-        Intersection of Two Linked Lists(******)
+        Intersection of Two Linked Lists(two pointer)
         Sort List(*********)
-        Linked List Cycle(***********)
+        Linked List Cycle(two pointer)
 11)Design-     lRU(Map,doublyLinkedList),
                InsertDeleteGetRandomO1Time(Map,LinkedList),
                Design HashMap(*******)
@@ -89,7 +89,7 @@
          RemoveDuplicatesFromSortedArray(index++ if not equal to prev)
          Find First and Last Position of Element in Sorted Array(*********)
          Maximum Product of Two Elements in an Array(**********)
-         Move Zeroes(*******)
+         Move Zeroes(count number of zeroes)
 15)Hashing-GroupAnagram
 16)Matrix- numberOfIslands(DFS,visitedFirstTimeCount),
            WordSearch(DFS,reach index n-1 of pattern to search),
