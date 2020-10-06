@@ -1,3 +1,59 @@
+class Solution {
+    public ListNode sortList(ListNode head) {
+        if(head==null) return null;
+        ListNode last=head;
+        while(last.next!=null){
+            last=last.next;
+        }
+        return mergeSort(head,last);
+    }
+    
+    ListNode mergeSort(ListNode l,ListNode h){
+        if(l==h) return l;
+        ListNode middle=findMiddle(l);
+        ListNode next=middle.next;
+        middle.next=null;
+        ListNode left=mergeSort(l,middle);
+        ListNode right=mergeSort(next,h);
+        return sort(left,right);
+    }
+    
+    ListNode sort(ListNode list1,ListNode list2){
+        ListNode dummy=new ListNode();
+        ListNode curr=dummy;
+        while(list1!=null && list2!=null){
+            if(list1.val<=list2.val){
+                curr.next=list1;
+                curr=curr.next;
+                list1=list1.next;
+            }else{
+                curr.next=list2;
+                curr=curr.next;
+                list2=list2.next;                
+            }
+        }
+        while(list1!=null){
+                curr.next=list1;
+                curr=curr.next;
+                list1=list1.next;
+        }
+        while(list2!=null){
+                curr.next=list2;
+                curr=curr.next;
+                list2=list2.next;
+        }
+        return dummy.next;
+    }
+    
+    ListNode findMiddle(ListNode head){
+        ListNode ptr1=head,ptr2=head;
+        while(ptr2.next!=null && ptr2.next.next!=null){
+            ptr1=ptr1.next;
+            ptr2=ptr2.next.next;
+        }
+        return ptr1;
+    }
+}
 public class MergeSort{
     static void doMergeSort(int [] arr,int l,int h){
 	if(h>l){
