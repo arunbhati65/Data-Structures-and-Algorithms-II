@@ -69,7 +69,7 @@
         middleOfALinkedList(2 pointer),
         RemoveNthNodeFromEndOfList(2Pointer),
         Intersection of Two Linked Lists(two pointer)
-        Sort List(*********)
+        Sort List(find middle,get single entity,merge them in order)
         Linked List Cycle(two pointer)
 11)Design-     lRU(Map,doublyLinkedList),
                InsertDeleteGetRandomO1Time(Map,LinkedList),
