@@ -43,7 +43,7 @@
         DepthOfBT(max of left ,right),
         ConstructBTFromPreOrderInOrderTraversal(map of inorder values and index, global variable for preorder, range of l and h for inorder , return null l>h and preorderVariable==n)
         Flatten Binary Tree to Linked List(Inorder Traversal)
-        Convert Sorted List to Binary Search Tree(*********)
+        Convert Sorted List to Binary Search Tree(middle of linked list,newnode=midle.data and  middle.next=null;)
         Construct Binary Tree from Inorder and Postorder Traversal(***********)
         Kth Smallest Element in a BST(*******)
         Populating Next Right Pointers in Each Node(******)
