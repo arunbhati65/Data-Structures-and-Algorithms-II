@@ -42,7 +42,7 @@
         BTRightSideVeiw(LevelOrderTraversal),
         DepthOfBT(max of left ,right),
         ConstructBTFromPreOrderInOrderTraversal(map of inorder values and index, global variable for preorder, range of l and h for inorder , return null l>h and preorderVariable==n)
-        Flatten Binary Tree to Linked List(*********)
+        Flatten Binary Tree to Linked List(Inorder Traversal)
         Convert Sorted List to Binary Search Tree(*********)
         Construct Binary Tree from Inorder and Postorder Traversal(***********)
         Kth Smallest Element in a BST(*******)
