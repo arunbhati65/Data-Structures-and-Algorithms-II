@@ -41,3 +41,38 @@ class Solution {
         return root;
     }
 }
+
+class Solution { //50%
+    public TreeNode sortedListToBST(ListNode head) {
+        if(head==null) return null;
+        ListNode tail=head;
+        while(tail.next!=null){
+            tail=tail.next;
+        }
+        return helper(head,tail);
+    }
+    
+    TreeNode helper(ListNode l,ListNode h){
+        if(l==null || l.val>h.val) return null;
+        if(l==h){
+            return new TreeNode(l.val);
+        }
+        ListNode middle=findMiddle(l);
+        TreeNode newNode=new TreeNode(middle.next.val);
+        ListNode right=middle.next.next;
+        middle.next=null;
+        newNode.left=helper(l,middle);
+        newNode.right=helper(right,h);
+        return newNode;
+    }
+    
+    ListNode findMiddle(ListNode node){
+        ListNode ptr1=node,ptr2=node,prev=node;
+        while(ptr2!=null && ptr2.next!=null){
+            prev=ptr1;
+            ptr1=ptr1.next;
+            ptr2=ptr2.next.next;
+        }
+        return prev;
+    }
+}
