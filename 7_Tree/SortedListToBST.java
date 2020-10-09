@@ -23,7 +23,38 @@
  *     }
  * }
  */
-class Solution {
+class Solution {//100
+    public TreeNode sortedListToBST(ListNode head) {
+        if(head==null) return null;
+        return helper(head);
+    }
+    
+    TreeNode helper(ListNode l){
+        if(l==null) return null;
+        if(l.next==null){
+            return new TreeNode(l.val);
+        }
+        ListNode middle=findMiddle(l);
+        TreeNode newNode=new TreeNode(middle.next.val);
+        ListNode right=middle.next.next;
+        middle.next=null;
+        newNode.left=helper(l);
+        newNode.right=helper(right);
+        return newNode;
+    }
+    
+    ListNode findMiddle(ListNode node){
+        ListNode ptr1=node,ptr2=node,prev=node;
+        while(ptr2!=null && ptr2.next!=null){
+            prev=ptr1;
+            ptr1=ptr1.next;
+            ptr2=ptr2.next.next;
+        }
+        return prev;
+    }
+}
+
+class Solution {//100
     public TreeNode sortedListToBST(ListNode head) {
         return helper(head);
     }
