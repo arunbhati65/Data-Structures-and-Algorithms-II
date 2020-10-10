@@ -48,7 +48,7 @@
         Kth Smallest Element in a BST(counter inorder traversal)
         Populating Next Right Pointers in Each Node(Intutive Approach, left pointer, using previously set next pointer)
         Range Sum of BST(Inorder traversal)
-        All Elements in Two Binary Search Trees(*********)
+        All Elements in Two Binary Search Trees(flatten two tree and merge two linkd list)
         Invert Binary Tree(***********)
         Binary Tree Vertical Order Traversal(********)
         All Nodes Distance K in Binary Tree(*******)
