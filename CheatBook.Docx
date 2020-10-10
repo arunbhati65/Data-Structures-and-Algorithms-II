@@ -87,7 +87,7 @@
          FloodFill(2 array),
          ProductOfArrayAcceptSelf(2 array left and right),
          RemoveDuplicatesFromSortedArray(index++ if not equal to prev)
-         Find First and Last Position of Element in Sorted Array(*********)
+         Find First and Last Position of Element in Sorted Array(2 variable approach)
          Maximum Product of Two Elements in an Array(**********)
          Move Zeroes(count number of zeroes)
 15)Hashing-GroupAnagram
