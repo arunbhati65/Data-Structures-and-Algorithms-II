@@ -101,7 +101,7 @@
            RotateMatrix(transponse and suffle columns),
            SearchAMatrix(binary search)
            Set Matrix Zeroes(*********)
-           Surrounded Regions(********)
+           Surrounded Regions(start from end with 0)
 17)Math-CountPrimes(visited,multiplication) ,
         FirstMissingNumber(n)(n+1)/2),
         ReverseInteger(/10 %10 until 0),
