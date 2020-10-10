@@ -47,7 +47,7 @@
         Construct Binary Tree from Inorder and Postorder Traversal(Same as preOrder and inorder, just start from right side)
         Kth Smallest Element in a BST(counter inorder traversal)
         Populating Next Right Pointers in Each Node(Intutive Approach, left pointer, using previously set next pointer)
-        Range Sum of BST(*********)
+        Range Sum of BST(Inorder traversal)
         All Elements in Two Binary Search Trees(*********)
         Invert Binary Tree(***********)
         Binary Tree Vertical Order Traversal(********)
