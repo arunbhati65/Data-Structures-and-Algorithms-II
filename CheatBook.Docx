@@ -52,7 +52,7 @@
         Invert Binary Tree(Inorder Traversal temp variable swap)
         Binary Tree Vertical Order Traversal(order,level,pre order traversal,map of int,Pair getKey getValue new Pair)
         All Nodes Distance K in Binary Tree(Level Order Traversal, covert tree into graph)
-        Boundary of Binary Tree(********)
+        Boundary of Binary Tree(add left,leaves,right boundary seperately)
         Two Sum BSTs(*******)
         Binary Search Tree to Greater Sum Tree(*******)
 8)Heap- medianFromStreamOfData(minHeap,MaxHeap),
