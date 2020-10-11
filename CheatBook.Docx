@@ -100,7 +100,7 @@
            MinimumPathSum(DP),
            RotateMatrix(transponse and suffle columns),
            SearchAMatrix(binary search)
-           Set Matrix Zeroes(*********)
+           Set Matrix Zeroes(if arr[i][j]==0  arr[i][0]=0  arr[0][j]=0 trick)
            Surrounded Regions(start from end with 0)
 17)Math-CountPrimes(visited,multiplication) ,
         FirstMissingNumber(n)(n+1)/2),
