@@ -19,6 +19,7 @@
               longestCommonSubSequence(***********)
               longestIncreasingSubSequence(***********)
               longestConsecutiveSequence(************)
+              longestNonRepeatingSubString(********)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
                           Permutations(forLoop,OrderNeed to be changed,swap)
                           GenerateParenthesis(forLoop)
