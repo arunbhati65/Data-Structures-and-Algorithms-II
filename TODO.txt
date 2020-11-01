@@ -1,13 +1,5 @@
 32 Most Frequent Questions leetcode pending
 Kadane
-Graph Algo - Prism Krushal Cut Vertex
 String Pattern Matching
-Trie
-Dictionary Search
 Stack and Queue implementation using each Other
-Greedy
-Divide and Conquer
-LFU
 KMP
-System Design Questions
-Advanced Data Structures
