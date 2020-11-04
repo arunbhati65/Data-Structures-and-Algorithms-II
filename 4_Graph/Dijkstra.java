@@ -1,10 +1,10 @@
     void dikstraInformationBuilder(int source){
-        int[][] graph={{0,2,4,0,0,0},  //zero means no edge,+ve value means weight of the edge 
-                {0,0,1,7,0,0},
-                {0,0,0,0,3,0},
-                {0,0,0,0,0,1},
-                {0,0,0,2,0,5},				
-                {0,0,0,0,0,0}};
+        int[][] graph= {{0,2,4,0,0,0},  //zero means no edge,+ve value means weight of the edge 
+                        {0,0,1,7,0,0},
+                        {0,0,0,0,3,0},
+                        {0,0,0,0,0,1},
+                        {0,0,0,2,0,5},				
+                        {0,0,0,0,0,0}};
         Integer[] dist=new Integer[graph.length];
         dist[source]=0;
         PriorityQueue<Integer> pq=new PriorityQueue<>(new Comparator<Integer>(){

@@ -4,3 +4,7 @@ String Pattern Matching
 Stack and Queue implementation using each Other
 KMP
 Heap+map data structures tushar roy
+coloring
+articulation point
+k swap pair linked list
+AVL
