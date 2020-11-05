@@ -8,3 +8,8 @@ coloring
 articulation point
 k swap pair linked list
 AVL
+Optimal Jump to reach ;ast element
+Robber
+Trie Notes and question and revision
+Median of two sorted array
+
