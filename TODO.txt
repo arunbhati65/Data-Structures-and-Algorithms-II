@@ -12,4 +12,5 @@ Optimal Jump to reach ;ast element
 Robber
 Trie Notes and question and revision
 Median of two sorted array
-
+hamilton path
+np hard problem
