@@ -16,6 +16,23 @@ class Solution {
 }
 
 class Solution {
+    Integer[][] memo;
+    public int longestCommonSubsequence(String text1, String text2) {
+        memo=new Integer[text1.length()][text2.length()];
+        return helper(text1,text2,0,0);
+    }
+    
+    int helper(String text1,String text2,int n,int m){
+        if(n==text1.length()|| m==text2.length()) return 0;
+        if(memo[n][m]!=null) return memo[n][m];
+        if(text1.charAt(n)==text2.charAt(m)){
+            return memo[n][m]=1+helper(text1,text2,n+1,m+1);
+        }
+        return memo[n][m]=Math.max(helper(text1,text2,n,m+1),helper(text1,text2,n+1,m));
+    }
+}
+
+class Solution {
     
     public int longestCommonSubsequence(String text1, String text2) {
         Integer result[][]=new Integer[text1.length()+1][text2.length()+1];
