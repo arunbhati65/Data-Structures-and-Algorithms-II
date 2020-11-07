@@ -17,7 +17,7 @@
               Find All Anagrams in a String(********)
               longestPalindromicSubSequence(***********)
               longestCommonSubSequence(0 if i or j grater than length,1+lcs(i+1,j+1),max(lcs(i+1,j),lcs(i,j+1)))
-              longestIncreasingSubSequence(***********)
+              longestIncreasingSubSequence(LIS[i]=Math.max(1+LIS[j])  , 0<=j<i)
               longestConsecutiveSequence(************)
               longestNonRepeatingSubString(********)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
