@@ -17,4 +17,4 @@ np hard problem
 Best-First Search.
 travelling salesman problem
 Reliability design dp
-
+maximumProductInAnArray

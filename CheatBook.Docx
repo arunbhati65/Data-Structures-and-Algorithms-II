@@ -16,7 +16,7 @@
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
               Find All Anagrams in a String(********)
               longestPalindromicSubSequence(***********)
-              longestCommonSubSequence(***********)
+              longestCommonSubSequence(0 if i or j grater than length,1+lcs(i+1,j+1),max(lcs(i+1,j),lcs(i,j+1)))
               longestIncreasingSubSequence(***********)
               longestConsecutiveSequence(************)
               longestNonRepeatingSubString(********)
