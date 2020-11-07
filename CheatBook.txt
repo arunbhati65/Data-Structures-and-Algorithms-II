@@ -20,6 +20,7 @@
               longestIncreasingSubSequence(LIS[i]=Math.max(1+LIS[j])  , 0<=j<i)
               longestConsecutiveSequence(************)
               longestNonRepeatingSubString(********)
+              longestProductInArray(***********)
 3)Permutation/Combination-letterCombinationsOfPhoneLetter(forLoop,order maintained),
                           Permutations(forLoop,OrderNeed to be changed,swap)
                           GenerateParenthesis(forLoop)

@@ -3,6 +3,9 @@ Kadane
 String Pattern Matching
 Stack and Queue implementation using each Other
 KMP
+Rabin Karp
+AVL tree
+B trees and B+ Trees
 Heap+map data structures tushar roy
 coloring
 articulation point
@@ -18,3 +21,7 @@ Best-First Search.
 travelling salesman problem
 Reliability design dp
 maximumProductInAnArray
+Branch and Bound
+QuickSort LinkedList
+Tower of Hanoi
+Row-Major and Column-Major
