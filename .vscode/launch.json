@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CombinationOfString",
+            "request": "launch",
+            "mainClass": "CombinationOfString",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ITOA<Data-Structures-and-Algorithms-II_1e867ae9>",
+            "request": "launch",
+            "mainClass": "ITOA",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PermutationOfString<Data-Structures-and-Algorithms-II_1e867ae9>",
+            "request": "launch",
+            "mainClass": "PermutationOfString",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        }
+    ]
+}
