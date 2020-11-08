@@ -1,23 +1,19 @@
 32 Most Frequent Questions leetcode pending
 Kadane
-String Pattern Matching
 Stack and Queue implementation using each Other
-KMP
-Rabin Karp
 coloring
 articulation point
 k swap pair linked list
 Optimal Jump to reach last element
 Robber
-Trie Notes and question and revision
 Median of two sorted array
-Permutaion
-Combination
 maximumProductInAnArray
 Tower of Hanoi
 threaded binary tree
-Google:-
--------
+print all paths from source to a destination
+
+Google :-
+........
 B trees and B+ Trees
 AVL tree
 hamilton path
@@ -26,9 +22,6 @@ sudoku
 knights tour problem
 hamiltonian cycle
 m coloring
-back tracking to find all subsets
-all permutation of a string in java
-print all paths from source to a destination
 np hard problem
 Best-First Search.
 travelling salesman problem
