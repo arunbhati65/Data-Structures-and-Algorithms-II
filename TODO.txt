@@ -11,7 +11,18 @@ maximumProductInAnArray
 Tower of Hanoi
 threaded binary tree
 print all paths from source to a destination
-
+External sort
+JWT
+consistent hashing
+Indexing
+Inverse Indexing
+Microservices and communication between them
+notification service
+Messaging queue
+time stamp- how to maintain sequencing as clint time stamp may be unreliable
+Class diagram for chess,conv
+recommendation system
+tournamet algorithm
 Google :-
 ........
 B trees and B+ Trees

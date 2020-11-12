@@ -9,6 +9,13 @@
             "name": "CodeLens (Launch) - GenerateAllStringOfNBits",
             "request": "launch",
             "mainClass": "GenerateAllStringOfNBits",
+            "projectName": "Data-Structures-and-Algorithms-II_729ab0d0"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenerateAllStringOfNBits",
+            "request": "launch",
+            "mainClass": "GenerateAllStringOfNBits",
             "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
         },
         {
