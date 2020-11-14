@@ -1,17 +1,8 @@
-32 Most Frequent Questions leetcode pending
-Kadane
-Stack and Queue implementation using each Other
-coloring
-articulation point
-k swap pair linked list
-Optimal Jump to reach last element
-Robber
-Median of two sorted array
-maximumProductInAnArray
-Tower of Hanoi
-threaded binary tree
-print all paths from source to a destination
-External sort
+SystemDesign Problem statement in detail to refer:
+-------------------------------------------------
+Practice class diagrams
+OOPs concept for class diagrams
+
 JWT
 consistent hashing
 Indexing
@@ -22,9 +13,6 @@ Messaging queue
 time stamp- how to maintain sequencing as clint time stamp may be unreliable
 Class diagram for chess,conv
 recommendation system
-tournamet algorithm
-
-DP 
 
 – Explain design patterns used so far.
 – How is code review done.
@@ -32,25 +20,22 @@ DP
 What type of cache do you use in your projects/SYstem.
 Using generics
 How will you resolved the concurrency issue when 2 customers try to book same seat.
+
 Complete design of my project HLD, LLD, UI, DB etc.
-Any task/project which was designed and implemented in less time but had a great impact on the production/Business Side.
-https://www.geeksforgeeks.org/longest-possible-chunked-palindrome/
-There is a university with certain sets of courses. You can take a course in any semester but you need to finish its prereq course (if prereq is given for a course) before that. Design the whole university structure and suggest the Algo. He then changed the question bit, if you can take up a course and its pre req in the same semester how will your code change. Topological sort
- Convert a roman number into an integer number. He provided me with a set of rules.
-   Any big enhancement suggested by you to make your code better.
-   A running stream of numbers is coming you need to keep track of top K elements
-   Heap interface and using that implement min heap or max heap. And also write the heapify code
-   Clone a Binary Tree with Random Pointers
-Write a program to calculate pow(x, n)
+
+Any big enhancement suggested by you to make your code better.
+A running stream of numbers is coming you need to keep track of top K elements
+Heap interface and using that implement min heap or max heap. And also write the heapify code
+Clone a Binary Tree with Random Pointers
+
 Program for Best Fit algorithm in Memory Management
 Design a deck of card (only the model classes)
 NoSQL vs a SQL database (when to choose which)
-prefix and suffix evaluation and conversion
-Job Description
+
 Design Promo Code API taking Amazon’s customer traffic into picture (HLD and LLD was discussed – including in memory databases)
 Variation of Topological Sorting : You have been given a set of inter-dependent tasks along with the time taken to execute them. We have more number of parallel processors available than the number of tasks given. There could be multiple starting tasks. There could also be cyclic dependencies. Calculate the minimum time required to complete all the task. Complete end to end production ready code was expected.
 
- Design a vending machine with following functionalities
+Design a vending machine with following functionalities
 
 Three types of Users : User, Operator, Admin
 User can select and buy multiple items at a time. Money can be inputted multiple times (you will get the item if there is a time gap > 30 secs). He can also do window shopping (see only the prices of items and buy nothing)
@@ -58,21 +43,13 @@ Operator can load the items and mark the items as expired if needed, gets notifi
 Admin can own multiple vending machines, he should have a analytics report of the items purchased in a month. He can also change the prices directly and it should reflect in all the vending machines which he owns.
 Exception handling in all the edge cases
 
-Practice class diagrams
-OOPs concept for class diagrams
-
-And one algorithmic problem at the end. Diameter of a binary tree
-
-Asked me to return the 2 corresponding nodes (at the end of diameter) instead of the diameter.
-
 Design a Whatsapp like service.
 Given the high level design first, then dived deeper explaining load balancing, splitting into microservies and communication between them, notification service, message queuing, database sharding, etc.
 Asked me how to maintain the sequencing of messages, since client’s time-stamp would be unreliable.
+
 Class diagram for a standalone Chess board game.
 Discussion on the my design like, why this class/relationship is needed, why this method is in this class rather than that, etc. Convinced him for few of them, giving proper reasons, and made changes in the design for other few.
 Pseudo code for all the possible moves of any piece.
-
-Given a result of a competition among all the students of a class, write a program to make students stand in a order such that every student must have lost to the student in his/her immediate left and won against the student to his/her immediate right.
 
 Design:
 Do integration for Splitwise app with Amazon Pay (or Paytm)
@@ -85,44 +62,23 @@ Based on frequency & time how will you execute them ?
 How will you notify back the user about start/stop or completion of a job ?
 How will your system know if a job is killed / terminated due to unknown reasons ?
 
-Given a n-ary tree, basically a graph but connected and doesn’t contain cycle.
-every edge is given a weight, identify all paths from all vertex to all vertex & then sum of all paths.
-Give final result as sum of all paths.
 
-Median in running stream of integers
-
-Stock buy and sell problem GeeksforGeeks Link
-
-Maximum sum subarray from array having positive and negative numbers both. GeeksforGeeks Link
-
-Distance between two given nodes in a binary tree. I was asked to write the optimal approach for the this.
-
-Given a string of arrays “cat,dog,god,act”. Print all the anagrams which comes first in list.
-eg.  output is cat ,act,dog and god. Means all the similar anagrams should be printed together and the next print should be the one which comes earlier in the list.
-Group Anagrams Together
-hint : Trie approach was expected here.
-
-Trie 
-
-Given a stream of input Integers, at any time get the median of those numbers.
-
-https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/
-
-Given a string and pattern with (*, ?) Check if it can match the string.
-
-https://www.geeksforgeeks.org/the-celebrity-problem/
-
-https://www.geeksforgeeks.org/the-celebrity-problem/
-
-Given an integer array, find the number of merge operations required to make it a palindrome GeeksforGeeks Link
-
-Write code for Sudoku Validator in most optimal time and space complexity ?
-Reference: GeeksforGeeks Link
 .........
+Behavioural
+-----------
+Job Description
+
+Any task/project which was designed and implemented in less time but had a great impact on the production/Business Side.
+
 http://kraftshala.com/how-to-raise-the-bar-in-the-amazon-interview/
+
+
 ........
 Google :-
 ........
+Given a result of a competition among all the students of a class, write a program to make students stand in a order such that every student must have lost to the student in his/her immediate left and won against the student to his/her immediate right.
+https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/
+https://www.geeksforgeeks.org/the-celebrity-problem/
 B trees and B+ Trees
 AVL tree
 hamilton path
@@ -131,6 +87,7 @@ sudoku
 knights tour problem
 hamiltonian cycle
 m coloring
+Robber
 np hard problem
 Best-First Search.
 travelling salesman problem
