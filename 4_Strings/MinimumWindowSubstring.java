@@ -23,7 +23,7 @@ class Solution {
         int minWinBegin=0;
         int minWinEnd=0;
         int count=0;
-        for(int begin=0,end=0;end<textLen;end++){
+        for(int begin=0,end=0;end<textLen;end++){  //Expansion
             if(needToFind[txt.charAt(end)]==0) continue;
             hasFound[txt.charAt(end)]++;
             if(hasFound[txt.charAt(end)]<=needToFind[txt.charAt(end)]){
@@ -35,7 +35,7 @@ class Solution {
                     if(hasFound[txt.charAt(begin)]>needToFind[txt.charAt(begin)]){
                       hasFound[txt.charAt(begin)]--;  
                     }
-                    begin++;
+                    begin++;//compresing
                 }
                 int windowLen = end - begin +1;
                 if(windowLen<minWindLen){
