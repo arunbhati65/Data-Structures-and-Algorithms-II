@@ -22,7 +22,7 @@ public class MinHeap{
 	
 	public static void buildHeap(){ // bottom to top //o(n)
 		for(int i=(size-2)/2;i>=0;--i){
-			minHeapify(i);
+			minHeapify(i);//top to bottom
 		}
 	}
 	
