@@ -13,19 +13,19 @@ class Solution {
         }
         ListNode dummy=new ListNode();
         dummy.next=head;
-        ListNode temp=dummy;
+        ListNode last=dummy;
         int i=0;
-        while(temp!=null && size-i>=k){
-            temp=reverseKElementsOnly(temp,k);
+        while(last!=null && size-i>=k){
+            last=reverseKElementsOnly(last,k);
             i=i+k;
         }
         return dummy.next;
         
     }
     
-    ListNode reverseKElementsOnly(ListNode A,int k){
+    ListNode reverseKElementsOnly(ListNode last,int k){
         int i=0;
-        ListNode head=A.next;
+        ListNode head=last.next;
         ListNode curr=head,prev=null,next=null;
         while(i<k && curr!=null){
             next=curr.next;
@@ -34,11 +34,11 @@ class Solution {
             curr=next;
             ++i;
         }
-        A.next=prev;
+        last.next=prev;//prev have become head nad will be attached to last 
         if(head!=null){
             head.next=curr;    
         }
-        return head;
+        return head;//head have come to end and will become last for next call
     }
 }
 

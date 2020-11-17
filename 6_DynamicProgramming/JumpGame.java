@@ -1,8 +1,6 @@
 /*
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
-
 Each element in the array represents your maximum jump length at that position.
-
 Determine if you are able to reach the last index.
 */
 class Solution {
@@ -48,21 +46,5 @@ class Solution {
             }    
         }
         return lastGood==0;
-    }
-}
-
-class Solution {   //Jump Games2              
-    public int jump(int[] nums) {
-        int jump=0;
-        int maxPos=0;
-        int nextIndex=0;
-        for(int i=0;i<nums.length-1;++i){
-            maxPos=Math.max(maxPos,i+nums[i]);
-            if(i==nextIndex){
-                nextIndex=maxPos;
-                ++jump;
-            }
-        }
-        return jump;
     }
 }
