@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TopologicalSort",
+            "request": "launch",
+            "mainClass": "TopologicalSort",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CRUD",
+            "request": "launch",
+            "mainClass": "CRUD",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - printAllPath",
             "request": "launch",
             "mainClass": "printAllPath",
