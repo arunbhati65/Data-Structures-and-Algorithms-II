@@ -1,5 +1,5 @@
 public class combination {
-    public static void printCombination(char[] arr){
+    public static void printCombinationSubString(char[] arr){
         System.out.println("");
         for(int i=0;i<arr.length;++i){
             backTracking(arr,i,arr[i]+"");

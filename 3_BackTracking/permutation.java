@@ -1,6 +1,6 @@
 public class permutation {
 
-    public static void printPermutation(char[] arr){
+    public static void printPermutationShuffle(char[] arr){
         backTracking(arr,0);
     }
 

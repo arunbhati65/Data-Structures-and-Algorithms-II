@@ -22,7 +22,6 @@ class Solution {
                 pq.add(node);    
             }
         }
-        
         ListNode curr=dummy;
         while(!pq.isEmpty()){
             ListNode node=pq.poll();

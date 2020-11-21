@@ -1,6 +1,6 @@
 class Solution {
     List<List<Integer>> combinations=new ArrayList<>();
-    public List<List<Integer>> combinationSum(int[] arr, int target) {
+    public List<List<Integer>> combinationSubSequenceSumEqulasTarget(int[] arr, int target) {
         ArrayList<Integer> list=new ArrayList<>();
         helper(arr,target,list,0);
         return combinations;
