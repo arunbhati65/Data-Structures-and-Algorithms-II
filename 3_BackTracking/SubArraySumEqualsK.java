@@ -1,5 +1,6 @@
 /*
-Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.
+Given an array of integers and an integer k, you need to find the total number of 
+continuous subarrays whose sum equals to k.
 */
 class Solution {  //Using Cumulative Sum Approcah i.e store sum of all the numbers --- o(n2)
     int count=0;
