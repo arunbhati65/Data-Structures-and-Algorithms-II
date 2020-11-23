@@ -1,4 +1,4 @@
-/**
+/*
 Given two binary search trees, return True if and only if there is a node in the first tree and a node in the second tree whose values sum up to a given integer target.
  */
 class Solution {

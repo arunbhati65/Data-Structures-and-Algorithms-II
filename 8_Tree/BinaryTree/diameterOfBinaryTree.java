@@ -6,7 +6,6 @@ class Solution {//100%
         return ans;
     }  
     
-
     int depth(TreeNode root){
         if(root==null) return 0;
         int left=depth(root.left);

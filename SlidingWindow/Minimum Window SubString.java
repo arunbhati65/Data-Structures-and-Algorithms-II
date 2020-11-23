@@ -6,7 +6,6 @@ class Solution {
         for(int i=0;i<patLen;++i){
             needToFind[pat.charAt(i)]++;
         }
-
         int[] hasFound=new int[256];
         int minWindLen=Integer.MAX_VALUE;
         int minWinBegin=0;
@@ -55,7 +54,6 @@ class Solution {
             if(dict.containsKey(currChar) && map.get(currChar)<=dict.get(currChar)){
                 matchCount++;
             }
-
             while(matchCount==t.length()){
                 if(matchCount==t.length() && (h-l+1)<matchSubStringLength){
                     ans=s.substring(l,h+1);
@@ -77,7 +75,6 @@ class Solution {
                 }
             }
         }
-        
         return ans;
     }
 }
