@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BFSAndDFSTraversal",
+            "request": "launch",
+            "mainClass": "BFSAndDFSTraversal",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Data-Structures-and-Algorithms-II_1e867ae9"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LevelOrderDataInReverseOrderBottomToUp",
             "request": "launch",
             "mainClass": "LevelOrderDataInReverseOrderBottomToUp",
