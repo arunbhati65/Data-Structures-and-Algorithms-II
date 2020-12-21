@@ -1,0 +1,137 @@
+1)dassault
+2)wednesday
+3)wissen
+4)delhivery
+5)epam
+6)kylas
+7)dassault
+8)puneStartup-aventior
+9)bharti airtel
+10)ivyComptech
+11)media occean
+12)carlsoft
+13)early pay(selected)
+14)itc infotect-automation anywhere
+15)Latha recuirter name
+16)Upgrad
+17)FreeCharge(selected)
+18)Paypal
+
+Amazon(Selected)
+
+PostgreSQL 
+AWS
+kafka 
+ELK
+loadbalancer
+cache
+Proxy
+Kubernetes
+
+
+why streams
+connection pool
+data strucutre for mySql,mongodb
+tranactional
+difference between rest controller and controlller
+proxy setup
+cache setup
+timeout setup in java
+cassandra vs mongoDB
+normalization and denormalization
+mySql to cassandra shifting
+linkedlist vs arraylist
+jdbc classFor
+Auth token
+microservices
+query in mongoDB
+how jobs get data from rabbitMQ
+runnable interface
+customer centric suggestion
+cyclic barrier
+circuit breaker
+AVL delete a node
+AWS
+ORM-hibernate
+how jpa connects to db
+how to add multiple database support
+design pattern
+DATA EXPORT
+LOCKS
+collection framework- when to choose set and list
+reverse a list using recursion
+cycle detection
+bubble sort
+example of design pattens in Spring
+check if string is rotation of other string or not
+how spring security works
+WHERE INDEXES INFO is stored
+how to limit the search totop 100 out of 10000 on db side pagination
+how to handle lock on db side,and jump to next available
+A server can have how many consecutive read write requests
+where your server is hosted(A)
+AnyThing you have done from your side - Customer obsession(A)
+Count of good nodes(A)
+find count of a number in a array(A)
+how to get top 100 result based on time.How to optimize db queries
+how to do consistent hashing using userID
+Function Overloading which funcion will be clled
+
+Generics
+
+Functional Programming
+List<Employee> filterEmployees(List<Employee> employees,Set<String> deignations){
+	//return employees.stream().filter(emp->deignations.contains(emp.getDesignation()).collect(Collectors.toList());
+	return employees.stream().filter(Employee::getStatus).collect(Collectors.toList());
+}
+Functional Interface
+lambda perdicate filter how indetify
+Default Method
+
+Method Reference
+
+Immutable
+
+class Employee{
+	final Employee emp;
+	Employee(){
+		emp=new Employee();
+	}
+	
+	Employee getEmployee(){
+		return emp;
+	}
+	Set
+}
+
+? 
+
+TypeEraser
+
+Employee emp1,emp2,emp3;
+@qualifer
+
+@Component
+class c{
+	@
+	ThirdParty reference;
+
+} 
+CrossOrigin
+
+class ThridParty
+
+@Confiuration
+@AutoConfiguration
+
+@preDestroy
+
+@postConstruct
+
+
+how to shard the instagram/twitter
+how to prepare news feed
+Sharding - consistent hashing
+consitent hashing
+
+
