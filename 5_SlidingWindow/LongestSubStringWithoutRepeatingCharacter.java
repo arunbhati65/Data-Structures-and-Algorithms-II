@@ -20,3 +20,22 @@ class Solution {
     }   
         
 }
+
+public static int findLength(String str) {
+    int l=0;
+    int count=0;
+    int winM=0;
+    HashMap<Character,Integer> map=new HashMap<>();
+    for(int h=0;h<str.length();++h){
+      Character curr=str.charAt(h);
+      if(!map.containsKey(curr)){
+        map.put(curr,h);
+        winM=Math.max(winM,h-l+1);
+      }else{
+        l=Math.max(l,map.get(curr)+1);
+        map.put(curr,h);
+        winM=Math.max(winM,h-l+1);
+      }
+    }
+    return winM;
+  }

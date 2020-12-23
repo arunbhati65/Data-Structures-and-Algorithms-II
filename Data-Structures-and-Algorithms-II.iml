@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/2_Maths" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Design" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4_Trie" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_Hashing and HashTable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5_SlidingWindow" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_GreedyAlgorithm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_Stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6_Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_BackTracking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_Graph" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7_LinkedList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_DynamicProgramming" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Heap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Matrix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Searching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Selection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Sorting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8_Tree" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

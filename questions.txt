@@ -1,34 +1,3 @@
-1)dassault
-2)wednesday
-3)wissen
-4)delhivery
-5)epam
-6)kylas
-7)dassault
-8)puneStartup-aventior
-9)bharti airtel
-10)ivyComptech
-11)media occean
-12)carlsoft
-13)early pay(selected)
-14)itc infotect-automation anywhere
-15)Latha recuirter name
-16)Upgrad
-17)FreeCharge(selected)
-18)Paypal
-
-Amazon(Selected)
-
-PostgreSQL 
-AWS
-kafka 
-ELK
-loadbalancer
-cache
-Proxy
-Kubernetes
-
-
 why streams
 connection pool
 data strucutre for mySql,mongodb
@@ -50,7 +19,7 @@ runnable interface
 customer centric suggestion
 cyclic barrier
 circuit breaker
-AVL delete a node
+
 AWS
 ORM-hibernate
 how jpa connects to db
@@ -128,10 +97,5 @@ class ThridParty
 
 @postConstruct
 
-
-how to shard the instagram/twitter
-how to prepare news feed
-Sharding - consistent hashing
-consitent hashing
 
 

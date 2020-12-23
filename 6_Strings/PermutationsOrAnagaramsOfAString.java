@@ -1,4 +1,5 @@
-//All possible anagrams or permutation of a string    
+/*
+//All possible anagrams or permutation of a string
 void helper(String txt,String str,int l,int h){
         if(l==h){
             if(txt.indexOf(str)>=0){
@@ -20,4 +21,4 @@ void helper(String txt,String str,int l,int h){
 		charArray[i] = charArray[j]; 
 		charArray[j] = temp; 
 		return String.valueOf(charArray); 
-	}
+	}*/

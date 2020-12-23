@@ -1,0 +1,9 @@
+
+PostgreSQL 
+AWS
+kafka 
+ELK
+loadbalancer
+cache
+Proxy
+Kubernetes
