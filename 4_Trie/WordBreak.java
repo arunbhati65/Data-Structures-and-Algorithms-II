@@ -1,4 +1,5 @@
 class Solution {
+    HashMap<String,Boolean> map=new HashMap<>();
     public boolean wordBreak(String s, List<String> words) {
         TNode node=new TNode();
         for(String word:words){
@@ -8,14 +9,20 @@ class Solution {
     }
     
     public boolean searchHelper(TNode node,String s){
+       if(map.containsKey(s)) return map.get(s);
        if(s.length()==0) return true;
        for(int i=1;i<=s.length();++i){
-           if(search(node,s.substring(0,i)) && searchHelper(node,s.substring(i,s.length()))) return true;
+           if(search(node,s.substring(0,i)) && searchHelper(node,s.substring(i,s.length()))){
+               map.put(s,true);
+               return true;
+           } 
        }
+       map.put(s,false);
        return false; 
     }
     
     public boolean search(TNode node,String s){
+        if(map.containsKey(s)) return map.get(s);
         if(s.length()==0) return false;
         int i=0;
         while(i<s.length()){
@@ -23,6 +30,7 @@ class Solution {
             node=node.dic.get(s.charAt(i));
             i++;
         }
+        map.put(s,node.isEnd);
         return node.isEnd;
     }
     
