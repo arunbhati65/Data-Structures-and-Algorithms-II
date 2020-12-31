@@ -2,27 +2,29 @@ import java.lang.Math;
 
 
 class Solution {
-	public int maxSubArray(int[] nums) {
-		if(nums.length==0) return 0;
-		int ans=nums[0];
-		int start =0,end=0;
-		int tillHere=nums[0];
-		for(int i=1;i<nums.length;++i){
-			if(tillHere+nums[i]<nums[i]){
-				start=i;
-			}
-			tillHere=Math.max(tillHere+nums[i],nums[i]);
-			if(ans<tillHere){
-				end=i;
-			}
-			ans=Math.max(ans,tillHere);
-			
-		}
-		System.out.println(start+" ->"+ end);
-		return ans;
-	}
+    public int maxSubArray(int[] nums) {
+        if(nums.length==0) return 0;
+        int ans=nums[0];
+        int start =0,end=0;
+        int tillHere=nums[0];
+        for(int i=1;i<nums.length;++i){
+            if(tillHere+nums[i]<nums[i]){
+                start=i;
+            }
+            tillHere=Math.max(tillHere+nums[i],nums[i]);
+            if(tillHere<=0){
+                start=i+1;
+            }
+            if(ans<tillHere){
+                end=i;
+            }
+            ans=Math.max(ans,tillHere);
+            
+        }
+        System.out.println(start+" ->"+ end);
+        return ans;
+    }
 }
-
 
 
 public class MaximumContiguousSubsequence{ // 
