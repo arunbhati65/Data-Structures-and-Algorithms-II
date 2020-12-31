@@ -1,3 +1,23 @@
+class Solution {//100 Intutuion Based
+    public Node connect(Node root) {
+        dfs(root,null);
+        return root;
+    }
+    
+    void dfs(Node root,Node par){
+        if(root==null) return ;
+        if(par!=null){
+            if(par.right!=null && par.right!=root){
+                root.next=par.right;
+            }else if(par.next!=null){
+                root.next=par.next.left;
+            }
+        }
+        dfs(root.left,root);
+        dfs(root.right,root);
+    }
+}
+
 class Solution { //100
     public Node connect(Node root) {
         Node left=root;
