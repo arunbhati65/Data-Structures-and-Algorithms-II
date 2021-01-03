@@ -1,4 +1,5 @@
-
+Zookeeper
+linux 
 PostgreSQL 
 AWS
 kafka 

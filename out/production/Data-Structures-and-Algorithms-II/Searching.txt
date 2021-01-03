@@ -1,3 +1,0 @@
-Linear Search -> o(n)
-Binary Search ->o(logn)  -> calculate mid and check whether the element at mid equals the key if not either
- search on left or right of the mid based on whether the mid element is less than or greate than the key.
