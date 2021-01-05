@@ -98,4 +98,77 @@ class ThridParty
 @postConstruct
 
 
+i1 i2 getName()  getI1()  getI2()
+
+public sttic void getName(int
+
+List<String>  
+
+public string getname(){
+	try{
+		return "try";
+	}catch(Exception e){
+		return "catch";
+	}catch(){
+
+	}
+	finally(){
+		return "finally";
+	}
+	
+}
+
+
+
+@PostMapping("/createAccount/1")
+List<Employee> createAccount(@RequestBody Employye emp,@Required @PathVaribale id){
+	employeeService.save(emp);
+}
+
+/createAccount?id="1"
+10 Emp,id,
+1-
+""All
+
+Name marks
+
+String name="Arun Bhati";
+" "  dup  reverse
+
+ithbnura
+
+String getCustomizeString(String str){
+	char[] chars=str.toCharArray();
+	chars[] newArray=reverse(removeDuplicatesAndEmptyCharsUpper(chars));
+	StringBuilder s=getString(newArray);
+	return s.toString();
+}
+
+char[] removeDuplicatesAndEmptyCharsUpper(char[] chars){
+	StringBuilder s=new StringBuilder();
+	HashSet<Charcater> set=new HashSet<>();
+	for(int i=0;i<chars.lrngth;++i){
+		if(chars[i]=' '|| set.contains(chrs[i]) continue;
+		if(chars[i]>='A' && chars[i]<='Z'){
+			chars[i]=chars[i]-'A'+'a';
+		}
+		set.add(chars[i]);
+		s.append(chars[i]);
+	}
+	return s.toString().toCharArray();
+}
+
+char[] reverse(char[] arr){
+	int l=0,h=arr.length-1;
+	while(l<=h){
+		char temp=arr[l];
+		arr[l]=arr[h];
+		arr[h]=temp;
+		++l;
+		--h;
+	}
+	return arr;
+}
+
+
 
