@@ -30,8 +30,8 @@
                                                 //here we are repeating for different weight left
                                                 //also we are pickig one item only once
 6)SubString - longestPalindromincSubString(each index as center,func(index,index),func(index,index))
-              Find All Anagrams in a String(********)
-              longestPalindromicSubSequence(***********)
+              Find All Anagrams in a String(backtracking)
+              longestPalindromicSubSequence(i+1,j-1)
               longestCommonSubSequence(0 if i or j grater than length,1+lcs(i+1,j+1),max(lcs(i+1,j),lcs(i,j+1)))
               longestIncreasingSubSequence(LIS[i]=Math.max(1+LIS[j])  , 0<=j<i)
               longestConsecutiveSequence(************)
