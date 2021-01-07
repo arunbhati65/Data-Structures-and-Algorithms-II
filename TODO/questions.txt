@@ -171,4 +171,4 @@ char[] reverse(char[] arr){
 }
 
 
-
+Difference between array and linked list, under which situation would u choose one over the other
