@@ -189,8 +189,6 @@ class DNode{
 	}
 }
 
-dumyyH   DuumyT
-
 class LRU{
 	int size=0;
 	int limit;
@@ -219,7 +217,6 @@ class LRU{
 		node.prev=head;
 		head.next=node;
 		map.put(key,node);
-		
 	}
 
 	String insert(String key,String value){
@@ -235,7 +232,6 @@ class LRU{
 	}
 	
 	void delete(){
-		
 		Node temp=tail.prev;
 		Node prev=temp.prev;
 		prev.next=tail;
@@ -244,3 +240,39 @@ class LRU{
 		--size;
 	}
 }
+
+
+3. Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x is the first greater element on the right side of x in array. Elements for which no greater element exist, consider next greater element as -1.
+
+
+Element       NGE
+   4      -->   5
+   5      -->   25
+   2      -->   25
+   25     -->   -1
+   11     -->   19
+   19     -->   -1
+
+A 2-D grid consisting of some blocked (represented as '#') and some unblocked (represented as '.') cells is given. The starting position of a pointer is in the top-left corner of the grid. It is guaranteed that the starting position is in an unblocked cell. It is also guaranteed that the bottom-right cell is unblocked. Each cell of the grid is connected with its right, left, top, and bottom cells (if those cells exist). It takes 1 second for a pointer to move from a cell to its adjacent cell. If the pointer can reach the bottom-right corner of the grid within k seconds, return the string 'Yes'. Otherwise, return the string 'No'. 
+
+ 
+
+Example
+
+rows = 3
+
+grid = ['..##', '#.##', '#...']
+
+maxTime = 5
+
+. . # #
+# . # #
+# . . .
+It will take the pointer 5 seconds to reach the bottom right corner. As long as k <= 5, return 'Yes'.
+
+
+
+
+
+
+
