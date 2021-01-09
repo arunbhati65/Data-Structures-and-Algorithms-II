@@ -174,3 +174,73 @@ char[] reverse(char[] arr){
 Difference between array and linked list, under which situation would u choose one over the other
 
 3 largest element in MYSQl
+
+
+class DNode{
+	String key;
+	String value;
+	DNode prev;
+	DNode next;
+
+	public DNode(){}
+	public DNode(String key,String value){
+		this.key=key;
+		this.value=value;
+	}
+}
+
+dumyyH   DuumyT
+
+class LRU{
+	int size=0;
+	int limit;
+	        //key   //node
+	Hashmap<String,DNode> map;
+	DNode head=new DNode(),tail=new DNode();
+	public LRU(int limit){
+		map=new HashMap<>();
+		head.next=tail;
+		tail.prev=head;
+                this.limit=limit;
+	}
+
+	String get(String key){
+		if(!map.contains(key)) {
+			String data=dataService.fetchData(key);
+			return insert(key,data);
+		}
+		DNode temp=map.get(key);
+		moveToHead(temp);
+		return temp.value;
+	}
+
+	void moveToHead(DNode temp){
+		node.next=temp;
+		node.prev=head;
+		head.next=node;
+		map.put(key,node);
+		
+	}
+
+	String insert(String key,String value){
+		if(map.contains(key)) return;
+		if(size==limit){
+			delete();
+		}
+		DNode node=new DNode(key,value);
+		DNode temp=head.next;
+		moveToHead(temp);
+		++size;
+		return value;
+	}
+	
+	void delete(){
+		
+		Node temp=tail.prev;
+		Node prev=temp.prev;
+		prev.next=tail;
+		tail.prev=prev;
+		map.remove(tempkey);
+		--size;
+	}
+}
