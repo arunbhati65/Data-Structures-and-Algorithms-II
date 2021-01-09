@@ -201,7 +201,7 @@ class LRU{
 		map=new HashMap<>();
 		head.next=tail;
 		tail.prev=head;
-                this.limit=limit;
+        this.limit=limit;
 	}
 
 	String get(String key){
