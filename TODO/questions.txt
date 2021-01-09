@@ -272,6 +272,51 @@ It will take the pointer 5 seconds to reach the bottom right corner. As long as 
 
 
 
+Vechile
+-------
+vechileNumber
+type
+passCount
+
+Jobs
+-----
+id
+DateTime LastRunDate
+
+
+
+Ticket
+-------
+Integer id
+String vechileNumber
+String attendentId
+DateTime enterTime
+DateTime exitTime
+Integer SparkingLotId
+Double price
+
+Attendents
+--------
+id
+Name
+Address
+
+parkingLot
+----------
+Integer id
+address
+name
+
+
+vechileType
+----------
+TWO_WHEELER
+FOUR_WHEELER
+BIG_TRUCK
+ELECTRIC_VECHILE
+
+
+ticketRepository.getTickets(by vechileNumber,btween dates).filter(exutTime-enter>=30).count();
 
 
 
