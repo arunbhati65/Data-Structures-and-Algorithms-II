@@ -131,7 +131,7 @@ List<Employee> createAccount(@RequestBody Employye emp,@Required @PathVaribale i
 ""All
 
 Name marks
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 String name="Arun Bhati";
 " "  dup  reverse
 
@@ -175,7 +175,7 @@ Difference between array and linked list, under which situation would u choose o
 
 3 largest element in MYSQl
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 class DNode{
 	String key;
 	String value;
@@ -240,7 +240,7 @@ class LRU{
 		--size;
 	}
 }
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Given an array, print the Next Greater Element (NGE) for every element. The Next greater Element for an element x is the first greater element on the right side of x in array. Elements for which no greater element exist, consider next greater element as -1.
 
@@ -252,7 +252,7 @@ Element       NGE
    25     -->   -1
    11     -->   19
    19     -->   -1
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 A 2-D grid consisting of some blocked (represented as '#') and some unblocked (represented as '.') cells is given. The starting position of a pointer is in the top-left corner of the grid. It is guaranteed that the starting position is in an unblocked cell. It is also guaranteed that the bottom-right cell is unblocked. Each cell of the grid is connected with its right, left, top, and bottom cells (if those cells exist). It takes 1 second for a pointer to move from a cell to its adjacent cell. If the pointer can reach the bottom-right corner of the grid within k seconds, return the string 'Yes'. Otherwise, return the string 'No'. 
 
  
@@ -270,7 +270,7 @@ maxTime = 5
 # . . .
 It will take the pointer 5 seconds to reach the bottom right corner. As long as k <= 5, return 'Yes'.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vechile
 -------
@@ -282,8 +282,6 @@ Jobs
 -----
 id
 DateTime LastRunDate
-
-
 
 Ticket
 -------
@@ -319,5 +317,5 @@ ELECTRIC_VECHILE
 ticketRepository.getTickets(by vechileNumber,btween dates).filter(exutTime-enter>=30).count();
 
 
-
-
+Heap working 
+KMP working
