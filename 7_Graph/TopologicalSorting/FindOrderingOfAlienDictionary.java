@@ -5,7 +5,6 @@ Output: bac
 Input: Words: ["cab", "aaa", "aab"]
 Output: cab
 */
-//4:51
 void printOrderOfAlienDictionary(String[] words){
     Map<Character,Set<Character>> graph=new HashMap<>();
     Map<Character,Integer> inDegree=new HashMap<>();
