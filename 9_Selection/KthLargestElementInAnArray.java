@@ -1,90 +1,40 @@
-/*
-215. Kth Largest Element in an Array
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
-*/
-
 class Solution {
-    public int findKthLargest(int[] nums, int k) {
-        return helper(nums,k,0,nums.length);
+    public int findKthLargest(int[] arr, int k) {
+        if(arr.length==0) return 0;
+        helper(arr,0,arr.length,k);
+        return arr[k-1];
     }
     
-    int helper(int[] nums,int k,int l,int h){
-        if(l>h) return -1;
-        int j=partition(nums,l,h);
-        if(j==nums.length-k) {
-            return nums[j];
-        }    
-        else if(j>nums.length-k){
-            return helper(nums,k,l,j);
+    void helper(int[] arr,int l,int h,int k){
+        if(l>h) return;
+        int j=partition(arr,l,h,k);
+        if(j==k-1) {
+            return;
+        }else if(j<k-1){
+            helper(arr,j+1,h,k);
+        }else{
+            helper(arr,l,j,k);
         }
-            return helper(nums,k,j+1,h);
-        
     }
     
-    int partition(int[] nums,int l,int h){
-        int pivot=l;
-        int i=l,j=h;
-        while(i<h){
-            do{
-               ++i; 
-            }while(i<nums.length && nums[i]<=nums[pivot]);
-            do{
-               --j; 
-            }while(j>=0 && nums[j]>nums[pivot]);
-            if(i<j){
-                int temp1=nums[i];
-                nums[i]=nums[j];
-                nums[j]=temp1;               
-            }else{
-                break;
-            }
-
-        }
-        int temp2=nums[pivot];
-        nums[pivot]=nums[j];
-        nums[j]=temp2;
-        return j;
-    }
-}
-
-class Solution {
-    public int findKthLargest(int[] nums, int k) {
-        return helper(nums,k,0,nums.length);
-    }
-    
-    int helper(int[] nums, int k,int l,int h){
-            int pivot=partition(nums,l,h);
-            if(pivot==k-1){
-                return nums[pivot];
-            }
-            else if(k-1<pivot){
-                return helper(nums,k,l,pivot);
-            }
-            return helper(nums,k,pivot+1,h);
-    }
-    
-    int partition(int[] nums,int l,int h){
-        int pivot=nums[l];
-        int i=l,j=h;
+    int partition(int[] arr,int l,int h,int k){
+        int i=l,j=h,pivot=arr[l];
         while(i<j){
             do{
                 ++i;
-            }while(i<nums.length && nums[i]>=pivot);
-
+            }while(i<h && arr[i]>=pivot);
             do{
-               --j; 
-            }while(nums[j]<pivot);
-            if(i>j){
-                break;
-            }else{
-                int temp1=nums[j];
-                nums[j]=nums[i];
-                nums[i]=temp1;
-            }
+                --j;
+            }while(j>=0 && arr[j]<pivot);
+            if(i<j) swap(arr,i,j);
         }
-        int temp2=nums[j];
-        nums[j]=pivot;
-        nums[l]=temp2;  
+        swap(arr,l,j);
         return j;
+    }
+    
+    void swap(int[] arr,int i,int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
     }
 }
