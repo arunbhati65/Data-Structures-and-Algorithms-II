@@ -1,9 +1,4 @@
-// you can also use imports, for example:
 import java.util.*;
-
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
-
 class Solution {
     public int solution(String S) {
         String[] strs=S.split("\n");
@@ -40,7 +35,7 @@ class Solution {
         maxBreak=Math.max(maxBreak,getMin("24:00")-getMin(strs[strs.length-1].split(" ")[1].split("-")[1]));
         return maxBreak;
     }
-
+    
     int getMin(String str){
         String[] arr=str.split(":");
         int min=Integer.parseInt(arr[0])*60;
