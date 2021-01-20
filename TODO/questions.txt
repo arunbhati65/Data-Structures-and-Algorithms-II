@@ -7,7 +7,7 @@ proxy setup
 cache setup
 timeout setup in java
 cassandra vs mongoDB
-normalization and denormalization
+normalization and denormalization-serialID
 mySql to cassandra shifting
 linkedlist vs arraylist
 jdbc classFor
@@ -44,6 +44,7 @@ Count of good nodes(A)
 find count of a number in a array(A)
 how to get top 100 result based on time.How to optimize db queries
 how to do consistent hashing using userID
+
 Function Overloading which funcion will be clled
 
 Generics
@@ -84,8 +85,8 @@ Employee emp1,emp2,emp3;
 class c{
 	@
 	ThirdParty reference;
-
 } 
+
 CrossOrigin
 
 class ThridParty
