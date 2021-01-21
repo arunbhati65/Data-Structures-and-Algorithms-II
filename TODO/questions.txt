@@ -374,4 +374,3 @@ maxSm=1  3  3   3  7  7
 	isOdd=        t  f  t  f  t  f
 	currO=   New ,5     9     3
 	currE=   new    ,7     2     6
-	
