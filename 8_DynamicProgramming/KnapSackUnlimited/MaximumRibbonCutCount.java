@@ -5,6 +5,7 @@ Output: 3
 Explanation: Ribbon pieces will be {2,2,3}.
 */
 
+
 int maxRibbonPieceCutCount(int[] valid,int length){
     int count=helper(valid,length,valid.length-1);
     if(count<0) return -1;
