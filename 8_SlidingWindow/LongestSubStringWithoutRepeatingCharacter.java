@@ -23,7 +23,6 @@ class Solution {
 
 public static int findLength(String str) {
     int l=0;
-    int count=0;
     int winM=0;
     HashMap<Character,Integer> map=new HashMap<>();
     for(int h=0;h<str.length();++h){
@@ -39,3 +38,19 @@ public static int findLength(String str) {
     }
     return winM;
   }
+
+  public static int findLength(char[] arr) {
+    int max=0; 
+    int l=0;
+    HashMap<Character,Integer> map=new HashMap<>();
+    for(int h=0;h<arr.length;++h){
+       if(!map.containsKey(arr[h])){
+           map.put(arr[h],h);
+       }else{
+           l=Math.max(l,map.get(arr[h]))+1;
+           map.put(arr[h],h);
+       }
+       max=Math.max(max,h-l+1);
+    }
+    return max;
+}
