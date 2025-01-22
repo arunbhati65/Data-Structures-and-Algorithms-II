@@ -1,3 +1,58 @@
+class Pair {
+  int l = -1;
+  int h = -1;
+}
+
+class Solution {
+  public String minWindow(String s, String t) {
+    if (s == null || t == null || s.length() == 0 || t.length() == 0)
+      return "";
+    Pair resultIndex = new Pair();
+    int charsToCount = t.length();
+    HashMap<Character, Integer> map = new HashMap<>();
+    for (char c : t.toCharArray()) {
+      map.put(c, map.getOrDefault(c, 0) + 1);
+    }
+    int l = 0;
+    for (int h = 0; h < s.length(); ++h) {
+      if (charsToCount > 0) {
+        if (map.containsKey(s.charAt(h))) {
+          int countPending = map.get(s.charAt(h));
+          map.put(s.charAt(h), map.get(s.charAt(h)) - 1);
+          if (countPending > 0) {
+            charsToCount--;
+            // map.put(s.charAt(h),map.get(s.charAt(h))-1);
+          }
+        }
+      }
+      while (charsToCount == 0) {
+        char cl = s.charAt(l);
+        if (map.containsKey(cl)) {
+          map.put(cl, map.get(cl) + 1);
+          int countPending = map.get(cl);
+          if (countPending > 0) {
+
+            charsToCount++;
+          }
+        }
+        if ((resultIndex.h == -1 && resultIndex.l == -1) || resultIndex.h - resultIndex.l > h - l) {
+          resultIndex.h = h;
+          resultIndex.l = l;
+        }
+
+        ++l;
+      }
+    }
+
+    if (resultIndex.l == -1) {
+      return "";
+    }
+
+    return s.substring(resultIndex.l, resultIndex.h + 1);
+  }
+}
+
+
 class Solution {
     public String minWindow(String txt, String pat) {
         int textLen=txt.length();
