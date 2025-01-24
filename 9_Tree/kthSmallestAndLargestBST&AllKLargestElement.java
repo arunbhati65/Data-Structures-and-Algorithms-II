@@ -1,4 +1,29 @@
 class Solution {
+    public List<Integer> kthLargest(Node root, int k) {
+        int[] temp = {k}; // Mutable reference to track `k`
+        List<Integer> result = new ArrayList<>();
+        helper(root, temp, result);
+        return result;
+    }
+
+    void helper(Node node, int[] k, List<Integer> result) {
+        if (node == null || k[0] == 0) return; // Base case: stop recursion
+
+        // Traverse the right subtree (larger values first)
+        helper(node.right, k, result);
+
+        // Process the current node
+        if (k[0] > 0) {
+            result.add(node.val);
+            k[0]--;
+        }
+
+        // Traverse the left subtree (smaller values)
+        helper(node.left, k, result);
+    }
+}
+
+class Solution {
     // return the Kth largest element in the given BST rooted at 'root'
     public int kthLargest(Node root, int k) {
         int[] temp={k};
