@@ -13,3 +13,19 @@ class Solution {
       return curMax;
     }
 }
+
+
+class Solution {
+    int maxGlobal=Integer.MIN_VALUE;
+    public int maxSubArray(int[] nums) {
+      int currMax=0;
+      for(int i=0;i<nums.length;++i){
+        currMax=currMax+nums[i];
+        maxGlobal=Math.max(currMax,maxGlobal);
+        if(currMax<0){
+          currMax=0;
+        }
+      }
+      return maxGlobal;
+    }
+}
