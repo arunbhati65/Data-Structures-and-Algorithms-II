@@ -1,3 +1,43 @@
+import java.util.*;
+
+class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums); // Sort the array to enable two-pointer approach
+        
+        for (int i = 0; i < nums.length - 2; i++) {
+            // Skip duplicates for the first element
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+            // Use two pointers to find the other two elements
+            int left = i + 1, right = nums.length - 1;
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+
+                if (sum == 0) {
+                    // Found a valid triplet
+                    result.add(Arrays.asList(nums[i], nums[left], nums[right]));
+
+                    // Skip duplicates for the second and third elements
+                    while (left < right && nums[left] == nums[left + 1]) left++;
+                    while (left < right && nums[right] == nums[right - 1]) right--;
+
+                    left++;
+                    right--;
+                } else if (sum < 0) {
+                    // If sum is less than 0, move the left pointer to increase the sum
+                    left++;
+                } else {
+                    // If sum is greater than 0, move the right pointer to decrease the sum
+                    right--;
+                }
+            }
+        }
+
+        return result;
+    }
+}
+
 class Solution {
     Set<List<Integer>> result=new HashSet<>();
     public List<List<Integer>> threeSum(int[] nums) {

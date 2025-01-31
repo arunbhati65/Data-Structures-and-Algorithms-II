@@ -1,3 +1,45 @@
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        sort(nums,0,nums.length);
+        return nums[nums.length-k];
+    }
+
+    void sort(int[] nums,int l,int h){
+      if(l>=h) return ;
+      int j=partition(nums,l,h);
+      sort(nums,l,j);
+      sort(nums,j+1,h);
+    }
+
+    int partition(int[] arr,int l,int h){
+      int pivot=arr[l];
+      int i=l,j=h;
+      while(i<h){
+        do{
+          ++i;
+        }while(i<arr.length && arr[i]<=pivot);
+
+        do{
+          --j;
+        }while(j>=0 && arr[j]>pivot);
+
+        if(j<i){
+          break;
+        }else{
+          swap(i,j,arr);
+        }
+      }
+      swap(l,j,arr);
+      return j;
+    }
+
+    void swap(int i,int j,int[] arr){
+      int temp=arr[i];
+      arr[i]=arr[j];
+      arr[j]=temp;
+    }
+}
+
 public class QuickSortPartition{//o(nlogn) // do not use extra memory space other than recursion stack merge sort use memory space for left and right array while merging
 					   //in merge sort left and right array are sorted while merging so need to pick one by one from each array for merging
 					   // both follow divide nd concur		

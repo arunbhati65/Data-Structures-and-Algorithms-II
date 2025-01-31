@@ -1,3 +1,21 @@
+class Solution {
+    static int knapSack(int val[], int wt[], int capacity) {
+      Integer[][] memo=new Integer[capacity+1][val.length];
+      return helper(val,wt,capacity,0,memo);
+    }
+    static int helper(int[] val,int wt[],int capacity,int index,Integer[][] memo){
+      if(capacity<0) return Integer.MIN_VALUE;
+      if(index>=val.length || capacity==0) return 0;
+      if(memo[capacity][index]!=null) return memo[capacity][index];
+      int include=Integer.MIN_VALUE;
+      if(capacity>=wt[index]){
+          include=val[index]+helper(val,wt,capacity-wt[index],index,memo);
+      }
+      int exclude=helper(val,wt,capacity,index+1,memo);
+      return memo[capacity][index]=Math.max(include,exclude);
+    }
+}
+
 int maxProfit(int[] W,int[] P,int C){
 
 	helper(W,P,C,0);
