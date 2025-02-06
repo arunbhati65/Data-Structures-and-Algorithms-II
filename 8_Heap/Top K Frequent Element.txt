@@ -1,3 +1,47 @@
+import java.util.*;
+
+class Main {
+    public static List<String> topKWordsInFileContent(String p, int k) {
+        String[] words = p.split(" ");
+        HashMap<String, Integer> wordFreqMap = new HashMap<>();
+
+        for (String word : words) {
+            wordFreqMap.put(word, wordFreqMap.getOrDefault(word, 0) + 1);
+        }
+
+        // Min-heap based on word frequency
+        PriorityQueue<String> pq = new PriorityQueue<>(new Comparator<String>() {
+            public int compare(String ob1, String ob2) {
+                return wordFreqMap.get(ob1) - wordFreqMap.get(ob2); // Min heap
+            }
+        });
+
+        for (String key : wordFreqMap.keySet()) {
+            pq.add(key);
+            if (pq.size() > k) { // Ensure heap has at most k elements
+                pq.poll();
+            }
+        }
+
+        // Extract k most frequent words and reverse the order (since it's a min-heap)
+        List<String> result = new ArrayList<>();
+        while (!pq.isEmpty()) {
+            result.add(pq.poll());
+        }
+        Collections.reverse(result); // Ensure highest frequency words appear first
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String p = "the the a b the b b a a";
+        List<String> words = topKWordsInFileContent(p, 2);
+        for (String str : words) {
+            System.out.println(str);
+        }
+    }
+}
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         if (k == nums.length) {
