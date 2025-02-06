@@ -1,0 +1,69 @@
+import java.util.*;
+class Trie{
+  public int value;
+  public boolean isEnd;
+  public Map<String,Trie> map;
+  Trie(){
+    map=new HashMap<>();
+    this.isEnd=false;
+  }
+  Trie(int val){
+    map=new HashMap<>();
+    value=val;
+    this.isEnd = false;
+  }
+}
+class FileSystem {
+
+    Trie root;
+    public FileSystem() {
+        root=new Trie(-1);
+    }
+    
+    public boolean createPath(String path, int value) {
+       if (path.isEmpty() || path.equals("/") || value < 0) {
+            return false;
+        }
+        String[] subPath=path.substring(1).split("/");
+        Trie node=root;
+        for(int i=0;i<subPath.length;++i){
+          if(!node.map.containsKey(subPath[i])){
+            if(i==subPath.length-1){
+              Trie tempN=new Trie();
+              tempN.value=value;
+              tempN.isEnd=true;
+              node.map.put(subPath[i],tempN);
+              return true;
+            }else{
+              return false;//node.map.put(subPath[i],new Trie());              
+            }
+          }
+          node=node.map.get(subPath[i]);
+        }
+        return false;
+    }
+    
+    public int get(String path) {
+        if (path.isEmpty() || path.equals("/")) {
+            return -1;
+        }
+        Trie temp=root;
+       String[] subPath=path.split("/");
+       int result=-1;
+       for(int i=0;i<subPath.length;++i){
+         if(temp.map.containsKey(subPath[i])){
+           if(i==subPath.length-1){
+             if(temp.map.get(subPath[i]).isEnd){
+               result=temp.map.get(subPath[i]).value;
+             }else{
+               return -1;
+             }
+           }
+           temp=temp.map.get(subPath[i]);
+         }else{
+           return -1;
+         }
+       }
+       return result;
+    }
+}
