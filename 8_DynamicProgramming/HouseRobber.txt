@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class RobHouses {
+   static int max;
+   static Map<Integer, Integer> memo; // Memoization map
+
+   public static int robHouses(int[] nums) {
+      max = 0;
+      memo = new HashMap<>(); // Initialize memoization map
+      helper(nums, 0, 0);
+      return max;
+   }
+
+   static void helper(int[] nums, int index, int currSum) {
+      max = Math.max(max, currSum);
+      if (index >= nums.length) return;
+
+      // Check if already computed for this index
+      if (memo.containsKey(index) && memo.get(index) >= currSum) return;
+
+      memo.put(index, currSum); // Store the best sum at this index
+
+      helper(nums, index + 2, currSum + nums[index]);
+      helper(nums, index + 1, currSum);
+   }
+}
