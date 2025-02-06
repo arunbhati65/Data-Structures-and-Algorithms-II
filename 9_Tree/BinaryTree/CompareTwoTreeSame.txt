@@ -1,0 +1,17 @@
+public class Main{
+    public static boolean sameTree(TreeNode<Integer> p, TreeNode<Integer> q) {
+      
+      return helper(p,q);
+      
+  }
+  static boolean helper(TreeNode<Integer> p, TreeNode<Integer> q){
+    if(p==null && q==null) return true;
+    if(p==null || q==null ) return false;
+    boolean left=helper(p.left,q.left);
+    if(!p.data.equals(q.data)){
+      return false;
+    }
+    boolean right=helper(p.right,q.right);
+    return left&&right;
+  }
+}
